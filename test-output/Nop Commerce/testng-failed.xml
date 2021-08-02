@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Nop Commerce]">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <test thread-count="5" name="Run on FIREFOX(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.login.Level_05_Register_Login_Page_Factory_">
+        <methods>
+          <include name="Login_02_Login_To_System"/>
+          <include name="beforeClass"/>
+          <include name="Login_01_Register_To_System"/>
+        </methods>
+      </class> <!-- com.nopcommerce.login.Level_05_Register_Login_Page_Factory_ -->
+    </classes>
+  </test> <!-- Run on FIREFOX(failed) -->
+</suite> <!-- Failed suite [Nop Commerce] -->

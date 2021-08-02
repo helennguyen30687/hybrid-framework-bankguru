@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Nop Commerce" duration-ms="20340" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:11Z">
+    <groups>
+    </groups>
+    <test name="Run on FIREFOX" duration-ms="20340" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:11Z">
+      <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="beforeClass" is-config="true" duration-ms="11166" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login_01_Register_To_System()[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="Login_01_Register_To_System" duration-ms="6653" started-at="2021-08-01T03:51:01Z" finished-at="2021-08-01T03:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_Register_To_System -->
+        <test-method status="PASS" signature="Login_02_Login_To_System()[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="Login_02_Login_To_System" duration-ms="2480" started-at="2021-08-01T03:51:08Z" finished-at="2021-08-01T03:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_02_Login_To_System -->
+      </class> <!-- com.nopcommerce.login.Level_06_Register_Login_Page_Generator -->
+    </test> <!-- Run on FIREFOX -->
+  </suite> <!-- Nop Commerce -->
+</testng-results>
