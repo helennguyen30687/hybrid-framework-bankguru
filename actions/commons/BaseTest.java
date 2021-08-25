@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
-	private String projectLocation = System.getProperty("user.dir");
+	//private String projectLocation = System.getProperty("user.dir");
 
 	private enum BROWSER {
 		CHROME, FIREFOX, SAFARI, IE, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROMEM, H_FIREFOX;

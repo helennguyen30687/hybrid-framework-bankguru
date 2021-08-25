@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Nop Commerce" duration-ms="20340" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:11Z">
+  <suite name="Datatable" duration-ms="20984" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:41Z">
     <groups>
     </groups>
-    <test name="Run on FIREFOX" duration-ms="20340" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:11Z">
-      <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="beforeClass" is-config="true" duration-ms="11166" started-at="2021-08-01T03:50:50Z" finished-at="2021-08-01T03:51:01Z">
+    <test name="Run on FIREFOX" duration-ms="20984" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:41Z">
+      <class name="com.jquery.datatable.Level_09_DataTable">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_09_DataTable@20e2cbe0]" name="beforeClass" is-config="true" duration-ms="14013" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:34Z">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://demo.nopcommerce.com/]]>
+                <![CDATA[https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Login_01_Register_To_System()[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="Login_01_Register_To_System" duration-ms="6653" started-at="2021-08-01T03:51:01Z" finished-at="2021-08-01T03:51:08Z">
+        <test-method status="PASS" signature="Table_06_Click_Icon_At_Row()[pri:0, instance:com.jquery.datatable.Level_09_DataTable@20e2cbe0]" name="Table_06_Click_Icon_At_Row" duration-ms="6933" started-at="2021-08-25T13:14:34Z" finished-at="2021-08-25T13:14:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_01_Register_To_System -->
-        <test-method status="PASS" signature="Login_02_Login_To_System()[pri:0, instance:com.nopcommerce.login.Level_06_Register_Login_Page_Generator@20e2cbe0]" name="Login_02_Login_To_System" duration-ms="2480" started-at="2021-08-01T03:51:08Z" finished-at="2021-08-01T03:51:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_02_Login_To_System -->
-      </class> <!-- com.nopcommerce.login.Level_06_Register_Login_Page_Generator -->
+        </test-method> <!-- Table_06_Click_Icon_At_Row -->
+      </class> <!-- com.jquery.datatable.Level_09_DataTable -->
     </test> <!-- Run on FIREFOX -->
-  </suite> <!-- Nop Commerce -->
+  </suite> <!-- Datatable -->
 </testng-results>

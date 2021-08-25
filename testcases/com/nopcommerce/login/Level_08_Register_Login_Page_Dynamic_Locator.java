@@ -14,8 +14,9 @@ import pageObjects.nopCommerce.MyAccountPageObject;
 import pageObjects.nopCommerce.OrderPageObject;
 import pageObjects.nopCommerce.RegisterPageObject;
 import pageObjects.nopCommerce.SearchPageObject;
+import pageObjects.nopCommerce.PageGeneratorManager;
 
-public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
+public class Level_08_Register_Login_Page_Dynamic_Locator extends BaseTest {
 	WebDriver driver;
 	String emailAddress, password;
 
@@ -28,7 +29,7 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 		homePage = new HomePageObject(driver);
 	}
 
-	@Test
+	//@Test
 	public void Login_01_Register_To_System() {
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 		registerPage = homePage.clickToRegisterLink();
@@ -45,7 +46,7 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 
 	}
 
-	@Test
+	//@Test
 	public void Login_02_Login_To_System() {
 		loginPage = homePage.clickToLoginLink();
 		loginPage.enterToEmailTextbox(emailAddress);
@@ -54,19 +55,45 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 	}
 	@Test
-	public void Login_03_Switch_Page_At_Footer() {
-		searchPage= homePage.openSearchPage();
+	public void Login_03_Open_Page_At_Footer() {
 		
-		myAccountPage = searchPage.openMyAccountPage(driver);
+		//home=>search=>my acount =>order =>my account=>Search=>Order
+		searchPage= (SearchPageObject) homePage.getFooterPageByName(driver, "Search");
 		
-		orderPage = myAccountPage.openOrderPage(driver);
+		myAccountPage = (MyAccountPageObject) searchPage.getFooterPageByName(driver, "My account");
 		
-		myAccountPage = orderPage.openMyAccountPage(driver);
+		orderPage = (OrderPageObject) myAccountPage.getFooterPageByName(driver, "Orders");
 		
-		searchPage = myAccountPage.openSearchPage(driver);
+		myAccountPage = (MyAccountPageObject) orderPage.getFooterPageByName(driver, "My account");
 		
-		orderPage = searchPage.openOrderPage(driver);
+		searchPage = (SearchPageObject) myAccountPage.getFooterPageByName(driver,"Search");
+		
+		orderPage = (OrderPageObject) searchPage.getFooterPageByName(driver,"Orders");
 	}
+	
+	@Test
+	public void Login_04_Open_Page_At_Footer() {
+		//home=>search=>my acount =>order =>my account=>Search=>Order
+		homePage.openFooterPageByName(driver, "Search");
+		searchPage= PageGeneratorManager.getSearchPage(driver);
+		
+		 searchPage.openFooterPageByName(driver, "My account");
+		 myAccountPage = PageGeneratorManager.getMyAccountPage(driver);
+		 
+		myAccountPage.openFooterPageByName(driver, "Orders");
+		orderPage =  PageGeneratorManager.getOrderPage(driver);
+		
+		orderPage.openFooterPageByName(driver, "My account");
+		myAccountPage = PageGeneratorManager.getMyAccountPage(driver);
+		
+		myAccountPage.openFooterPageByName(driver,"Search");
+		 searchPage =PageGeneratorManager.getSearchPage(driver);
+		
+		searchPage.openFooterPageByName(driver,"Orders");
+		orderPage = PageGeneratorManager.getOrderPage(driver);
+	}
+	
+	
 	public void afterClass() {
 		driver.quit();
 	}

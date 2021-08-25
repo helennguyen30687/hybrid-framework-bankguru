@@ -5,13 +5,12 @@
   <test thread-count="5" name="Run on FIREFOX(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.login.Level_05_Register_Login_Page_Factory_">
+      <class name="com.nopcommerce.login.Level_08_Register_Login_Page_Dynamic_Locator">
         <methods>
-          <include name="Login_02_Login_To_System"/>
+          <include name="Login_04_Open_Page_At_Footer"/>
           <include name="beforeClass"/>
-          <include name="Login_01_Register_To_System"/>
         </methods>
-      </class> <!-- com.nopcommerce.login.Level_05_Register_Login_Page_Factory_ -->
+      </class> <!-- com.nopcommerce.login.Level_08_Register_Login_Page_Dynamic_Locator -->
     </classes>
   </test> <!-- Run on FIREFOX(failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->

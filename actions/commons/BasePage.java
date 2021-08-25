@@ -14,12 +14,19 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import pageObjects.nopCommerce.MyAccountPageObject;
+import pageObjects.nopCommerce.OrderPageObject;
+import pageObjects.nopCommerce.PageGeneratorManager;
+import pageObjects.nopCommerce.SearchPageObject;
+import pageUIs.nopCommerce.BasePageUI;
 
 public class BasePage {
 	public static BasePage getBasePage() {
 		return new BasePage();
 	}
-	
+
 	public void openUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
@@ -37,7 +44,7 @@ public class BasePage {
 	}
 
 	public Alert waitForAlertPresence(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		return explicitWait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -122,8 +129,16 @@ public class BasePage {
 		return driver.findElements(getByXpath(locator));
 	}
 
+	public String getDynamicLocator(String locator, String... params) {
+		return String.format(locator, (Object[]) params);
+	}
+
 	public void clickToElement(WebDriver driver, String locator) {
 		getElement(driver, locator).click();
+	}
+
+	public void clickToElement(WebDriver driver, String locator, String... params) {
+		getElement(driver, getDynamicLocator(locator, params)).click();
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locator, String value) {
@@ -131,10 +146,21 @@ public class BasePage {
 		getElement(driver, locator).sendKeys(value);
 	}
 
+	public void sendkeyToElement(WebDriver driver, String locator, String value, String... params) {
+		locator = getDynamicLocator(locator, params);
+		getElement(driver, locator).clear();
+		getElement(driver, locator).sendKeys(value);
+	}
+
 	public int getElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
 	}
-
+	
+	public int getElementSize(WebDriver driver, String locator, String... params) {
+		locator = getDynamicLocator(locator, params);
+		return getElements(driver, locator).size();
+	}
+	
 	public void selectDropdownByText(WebDriver driver, String locator, String itemText) {
 		select = new Select(getElement(driver, locator));
 		select.selectByVisibleText(itemText);
@@ -163,7 +189,7 @@ public class BasePage {
 		getElement(driver, parentLocator).click();
 		sleepInSecond(1);
 
-		explicitWait = new WebDriverWait(driver, timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childItemLocator)));
 
 		for (WebElement item : allItems) {
@@ -187,63 +213,77 @@ public class BasePage {
 		return getElement(driver, locator).getText();
 	}
 
+	public String getElementText(WebDriver driver, String locator, String... params) {
+		return getElement(driver, getDynamicLocator(locator, params)).getText();
+	}
+
 	public void checkToCheckboxOrRadio(WebDriver driver, String locator) {
-		if(!isElementSelected(driver, locator)) {
+		if (!isElementSelected(driver, locator)) {
 			getElement(driver, locator).click();
 		}
 	}
-	
+
 	public void unCheckToCheckbox(WebDriver driver, String locator) {
-		if(isElementSelected(driver, locator)) {
+		if (isElementSelected(driver, locator)) {
 			getElement(driver, locator).click();
 		}
 	}
-	
+
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
 		return getElement(driver, locator).isDisplayed();
 	}
-	
+
+	public boolean isElementDisplayed(WebDriver driver, String locator, String... params) {
+		return getElement(driver, getDynamicLocator(locator, params)).isDisplayed();
+	}
+
 	public boolean isElementSelected(WebDriver driver, String locator) {
 		return getElement(driver, locator).isSelected();
 	}
-	
+
 	public boolean isElementEnabled(WebDriver driver, String locator) {
 		return getElement(driver, locator).isEnabled();
 	}
-	
+
 	public WebDriver switchToIFrameToElement(WebDriver driver, String locator) {
 		return driver.switchTo().frame(getElement(driver, locator));
 	}
-	
+
 	public WebDriver switchToDefaultContent(WebDriver driver, String locator) {
 		return driver.switchTo().defaultContent();
 	}
-	
+
 	public void hoverToElement(WebDriver driver, String locator) {
 		action = new Actions(driver);
-		action.moveToElement(getElement(driver, locator)).perform(); 
-	} //action phai dung perform
-	
+		action.moveToElement(getElement(driver, locator)).perform();
+	} // action phai dung perform
+
 	public void doubleClickToElement(WebDriver driver, String locator) {
 		action = new Actions(driver);
-		action.doubleClick(getElement(driver, locator)).perform();  
+		action.doubleClick(getElement(driver, locator)).perform();
 	}
-	
+
 	public void rightClickToElement(WebDriver driver, String locator) {
 		action = new Actions(driver);
 		action.contextClick(getElement(driver, locator)).perform();
 	}
-	
+
 	public void dragAndDropElement(WebDriver driver, String locator, String sourceLocator, String targetLocator) {
 		action = new Actions(driver);
 		action.dragAndDrop(getElement(driver, sourceLocator), getElement(driver, targetLocator)).perform();
 	}
-	
-	public void pressKeyToElement(WebDriver driver, String locator,Keys key) {
+
+	public void pressKeyToElement(WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
-		action.sendKeys(getElement(driver, locator),key).perform();
+		action.sendKeys(getElement(driver, locator), key).perform();
 	}
 	
+	
+	public void pressKeyToElement(WebDriver driver, String locator, Keys key, String... params) {
+		locator = getDynamicLocator(locator, params);
+		action = new Actions(driver);
+		action.sendKeys(getElement(driver, locator), key).perform();
+	}
 	public Object executeForBrowser(WebDriver driver, String javaScript) {
 		jsExecutor = (JavascriptExecutor) driver;
 		return jsExecutor.executeScript(javaScript);
@@ -274,7 +314,8 @@ public class BasePage {
 		jsExecutor = (JavascriptExecutor) driver;
 		WebElement element = getElement(driver, locator);
 		String originalStyle = element.getAttribute("style");
-		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				"border: 2px solid red; border-style: dashed;");
 		sleepInSecond(1);
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
 	}
@@ -300,7 +341,7 @@ public class BasePage {
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		jsExecutor = (JavascriptExecutor) driver;
 
 		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
@@ -328,42 +369,102 @@ public class BasePage {
 		jsExecutor = (JavascriptExecutor) driver;
 		return (String) jsExecutor.executeScript("return arguments[0].validationMessage;", getElement(driver, locator));
 	}
-	
+
 	public boolean isImageLoaded(WebDriver driver, String locator) {
 		jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getElement(driver, locator));
+		boolean status = (boolean) jsExecutor.executeScript(
+				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				getElement(driver, locator));
 		if (status) {
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
+
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver,timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
 	}
-	
+
+	public void waitForElementVisible(WebDriver driver, String locator, String... params) {
+		locator = getDynamicLocator(locator, params);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
+	}
+
 	public void waitForAllElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver,timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
 	}
-	
+
+	public void waitForAllElementVisible(WebDriver driver, String locator, String... params) {
+		locator = getDynamicLocator(locator, params);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
+	}
+
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver,timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
 	}
-	
+
+	public void waitForElementClickable(WebDriver driver, String locator, String... params) {
+		locator = getDynamicLocator(locator, params);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
+
+	}
+
 	public void waitForElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver,timeout);
+		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
-	
-	
+
+	public OrderPageObject openOrderPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ORDER_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.ORDER_PAGE_FOOTER);
+		return PageGeneratorManager.getOrderPage(driver);
+	}
+
+	public SearchPageObject openSearchPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		return PageGeneratorManager.getSearchPage(driver);
+	}
+
+	public MyAccountPageObject openMyAccountPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		return PageGeneratorManager.getMyAccountPage(driver);
+	}
+
+	public BasePage getFooterPageByName(WebDriver driver, String pageName) {
+		scrollToBottomPage(driver);
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		switch (pageName) {
+		case "Search":
+			return PageGeneratorManager.getSearchPage(driver);
+		case "Orders":
+			return PageGeneratorManager.getOrderPage(driver);
+		case "My account":
+			return PageGeneratorManager.getMyAccountPage(driver);
+		}
+		return PageGeneratorManager.getMyAccountPage(driver);
+	}
+
+	public void openFooterPageByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+
+	}
+
 	private Alert alert;
 	private Select select;
-	private Actions action; 
-	private long timeout = 30;
+	private Actions action;
+	private long shortTimeout = GlobalConstants.LONG_TIMEOUT;
+	//private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
 }

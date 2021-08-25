@@ -2,11 +2,16 @@ package pageObjects.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
 
-public class MyAccountPageObject {
+import commons.BasePage;
+
+public class MyAccountPageObject extends BasePage{
 	WebDriver driver;
 	
 	public MyAccountPageObject(WebDriver driver) {
 		this.driver=driver;
 	}
+
+	
+
 
 }

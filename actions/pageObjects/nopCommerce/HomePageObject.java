@@ -12,6 +12,7 @@ public class HomePageObject extends BasePage{
 	public HomePageObject(WebDriver driver) {
 		 this.driver = driver;
 	}
+	
 	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
@@ -29,7 +30,9 @@ public class HomePageObject extends BasePage{
 		return isElementDisplayed(driver, HomePageUI.HOME_PAGE_SLIDER);
 	}
 	public SearchPageObject openSearchPage() {
-		return null;
+		waitForElementClickable(driver, HomePageUI.SEARCH_PAGE_FOOTER);
+		clickToElement(driver,  HomePageUI.SEARCH_PAGE_FOOTER);
+		return PageGeneratorManager.getSearchPage(driver);
 	}
 
 	

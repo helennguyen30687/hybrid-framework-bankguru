@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Nop Commerce]">
-  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Datatable]">
+  <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/>
   <test thread-count="5" name="Run on FIREFOX(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.login.Level_05_Register_Login_Page_Factory_">
+      <class name="com.jquery.datatable.Level_09_DataTable">
         <methods>
-          <include name="Login_02_Login_To_System"/>
+          <include name="Table_04_Verify_Data"/>
           <include name="beforeClass"/>
-          <include name="Login_01_Register_To_System"/>
         </methods>
-      </class> <!-- com.nopcommerce.login.Level_05_Register_Login_Page_Factory_ -->
+      </class> <!-- com.jquery.datatable.Level_09_DataTable -->
     </classes>
   </test> <!-- Run on FIREFOX(failed) -->
-</suite> <!-- Failed suite [Nop Commerce] -->
+</suite> <!-- Failed suite [Datatable] -->
