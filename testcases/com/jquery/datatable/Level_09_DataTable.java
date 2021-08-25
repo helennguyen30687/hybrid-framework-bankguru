@@ -79,8 +79,12 @@ public class Level_09_DataTable extends BaseTest {
 		homePage.clickToIconByRowNumber("3","Move Up");
 		homePage.sleepInSecond(3);
 		
+		homePage.clickToIconByRowNumber("1","Move Down");
+		homePage.sleepInSecond(3);
+		
 		homePage.clickToIconByRowNumber("2","Remove Current Row");
 		homePage.sleepInSecond(3);
+		
 	}
 	// @AfterClass
 	public void afterClass() {
