@@ -54,7 +54,7 @@ public class Level_08_Register_Login_Page_Dynamic_Locator extends BaseTest {
 		homePage = loginPage.clickOnLoginButton();
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 	}
-	@Test
+//	@Test
 	public void Login_03_Open_Page_At_Footer() {
 		
 		//home=>search=>my acount =>order =>my account=>Search=>Order

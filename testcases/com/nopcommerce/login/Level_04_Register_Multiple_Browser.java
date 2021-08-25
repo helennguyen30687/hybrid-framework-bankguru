@@ -25,7 +25,7 @@ public class Level_04_Register_Multiple_Browser extends BaseTest {
 
 	}
 
-	@Test
+//	@Test
 	public void Login_01_Register_To_System() {
 		driver.get("https://demo.nopcommerce.com/");
 		homePage = new HomePageObject(driver);
@@ -49,7 +49,7 @@ public class Level_04_Register_Multiple_Browser extends BaseTest {
 
 	}
 
-	@Test
+	//@Test
 	public void Login_02_Login_To_System() {
 		homePage.clickToLoginLink();
 		loginPage = new LoginPageObject(driver);

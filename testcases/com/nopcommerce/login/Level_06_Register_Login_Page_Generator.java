@@ -26,7 +26,7 @@ public class Level_06_Register_Login_Page_Generator extends BaseTest {
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
-	@Test
+	//@Test
 	public void Login_01_Register_To_System() {
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 		registerPage = homePage.clickToRegisterLink();
@@ -43,7 +43,7 @@ public class Level_06_Register_Login_Page_Generator extends BaseTest {
 
 	}
 
-	@Test
+	//@Test
 	public void Login_02_Login_To_System() {
 		loginPage = homePage.clickToLoginLink();
 		loginPage.enterToEmailTextbox(emailAddress);

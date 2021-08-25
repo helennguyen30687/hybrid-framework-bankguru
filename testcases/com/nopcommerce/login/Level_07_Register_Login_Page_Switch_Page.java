@@ -28,7 +28,7 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 		homePage = new HomePageObject(driver);
 	}
 
-	@Test
+	//@Test
 	public void Login_01_Register_To_System() {
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 		registerPage = homePage.clickToRegisterLink();
@@ -45,7 +45,7 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 
 	}
 
-	@Test
+	//@Test
 	public void Login_02_Login_To_System() {
 		loginPage = homePage.clickToLoginLink();
 		loginPage.enterToEmailTextbox(emailAddress);
@@ -53,7 +53,7 @@ public class Level_07_Register_Login_Page_Switch_Page extends BaseTest {
 		homePage = loginPage.clickOnLoginButton();
 		Assert.assertTrue(homePage.isHomePageSliderDisplayed());
 	}
-	@Test
+//	@Test
 	public void Login_03_Switch_Page_At_Footer() {
 		searchPage= homePage.openSearchPage();
 		

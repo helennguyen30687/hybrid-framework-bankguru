@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="run_All">
+	<suite-files>
+		<suite-file path="runJQueryTestCases.xml" />
+		<suite-file path="runNopCommerceTestCases.xml" />
+	</suite-files>
+</suite>

@@ -27,7 +27,7 @@ public class Level_03_Register_Login_Page_Object {
 		password = "123456";
 	}
 
-	@Test
+//	@Test
 	public void Login_01_Register_To_System() {
 		driver.get("http://demo.nopcommerce.com/");
 		homePage = new HomePageObject(driver);
@@ -48,7 +48,7 @@ public class Level_03_Register_Login_Page_Object {
 		homePage = new HomePageObject(driver);
 	}
 
-	@Test
+//	@Test
 	public void Login_02_Login_To_System() {
 		homePage.clickToLoginLink();
 		loginPage = new LoginPageObject(driver);
