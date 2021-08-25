@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Live Guru]">
+  <parameter name="url" value="http://live.demoguru99.com/index.php"/>
+  <test thread-count="5" name="Run on FIREFOX(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.liveguru.login.Level_04_Register_Multiple_Browser">
+        <methods>
+          <include name="Login_05_Incorrect_Password"/>
+          <include name="beforeClass"/>
+          <include name="Login_06_Valid_Email_Password"/>
+        </methods>
+      </class> <!-- com.liveguru.login.Level_04_Register_Multiple_Browser -->
+    </classes>
+  </test> <!-- Run on FIREFOX(failed) -->
+</suite> <!-- Failed suite [Live Guru] -->

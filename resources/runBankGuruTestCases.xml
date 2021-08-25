@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Bank Guru" parallel="false">
   <test name="Run on FIREFOX">
     <classes>
-      <class name="com.bankguru.user.User_01_New_Customer"/>
+      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_1"/>
+      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_2"/>
+      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_3"/>
     </classes>
   </test> 
 </suite>
