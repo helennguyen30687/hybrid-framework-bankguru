@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Datatable" duration-ms="20984" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:41Z">
+  <suite name="Admin - Nop Commerce" duration-ms="52039" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:57Z">
     <groups>
     </groups>
-    <test name="Run on FIREFOX" duration-ms="20984" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:41Z">
-      <class name="com.jquery.datatable.Level_09_DataTable">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_09_DataTable@20e2cbe0]" name="beforeClass" is-config="true" duration-ms="14013" started-at="2021-08-25T13:14:20Z" finished-at="2021-08-25T13:14:34Z">
+    <test name="Run on FIREFOX" duration-ms="52039" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:57Z">
+      <class name="com.nopcommerce.admin.Level_10_Admin_Upload_File">
+        <test-method status="PASS" signature="productImgName(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@20e2cbe0]" name="productImgName" is-config="true" duration-ms="22641" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:28Z">
           <params>
             <param index="0">
               <value>
@@ -16,18 +16,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/]]>
+                <![CDATA[https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Table_06_Click_Icon_At_Row()[pri:0, instance:com.jquery.datatable.Level_09_DataTable@20e2cbe0]" name="Table_06_Click_Icon_At_Row" duration-ms="6933" started-at="2021-08-25T13:14:34Z" finished-at="2021-08-25T13:14:41Z">
+        </test-method> <!-- productImgName -->
+        <test-method status="PASS" signature="Admin_01_Upload_File()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@20e2cbe0]" name="Admin_01_Upload_File" duration-ms="29377" started-at="2021-09-14T12:39:28Z" finished-at="2021-09-14T12:39:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Table_06_Click_Icon_At_Row -->
-      </class> <!-- com.jquery.datatable.Level_09_DataTable -->
+        </test-method> <!-- Admin_01_Upload_File -->
+      </class> <!-- com.nopcommerce.admin.Level_10_Admin_Upload_File -->
     </test> <!-- Run on FIREFOX -->
-  </suite> <!-- Datatable -->
+  </suite> <!-- Admin - Nop Commerce -->
 </testng-results>

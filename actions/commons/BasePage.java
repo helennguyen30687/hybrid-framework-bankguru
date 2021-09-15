@@ -16,11 +16,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import pageObjects.admin.nopCommerce.ProductSearchPO;
 import pageObjects.nopCommerce.MyAccountPageObject;
 import pageObjects.nopCommerce.OrderPageObject;
 import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.SearchPageObject;
-import pageUIs.nopCommerce.BasePageUI;
+import pageUI.admin.nopCommerce.AdminBasePageUI;
+import pageUI.admin.nopCommerce.ProductDetailUI;
+import pageUIs.nopCommerce.UserBasePageUI;
 
 public class BasePage {
 	public static BasePage getBasePage() {
@@ -124,7 +127,9 @@ public class BasePage {
 	public WebElement getElement(WebDriver driver, String locator) {
 		return driver.findElement(getByXpath(locator));
 	}
-
+	public WebElement getElement(WebDriver driver, String locator,String...params) {
+		return driver.findElement(getByXpath(getDynamicLocator(locator, params)));
+	}
 	public List<WebElement> getElements(WebDriver driver, String locator) {
 		return driver.findElements(getByXpath(locator));
 	}
@@ -155,12 +160,12 @@ public class BasePage {
 	public int getElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
 	}
-	
+
 	public int getElementSize(WebDriver driver, String locator, String... params) {
 		locator = getDynamicLocator(locator, params);
 		return getElements(driver, locator).size();
 	}
-	
+
 	public void selectDropdownByText(WebDriver driver, String locator, String itemText) {
 		select = new Select(getElement(driver, locator));
 		select.selectByVisibleText(itemText);
@@ -208,7 +213,9 @@ public class BasePage {
 	public String getElementAttributeValue(WebDriver driver, String locator, String attributeName) {
 		return getElement(driver, locator).getAttribute(attributeName);
 	}
-
+	public String getElementAttributeValue(WebDriver driver, String locator, String attributeName, String...params) {
+		return getElement(driver, getDynamicLocator(locator, params)).getAttribute(attributeName);
+	}
 	public String getElementText(WebDriver driver, String locator) {
 		return getElement(driver, locator).getText();
 	}
@@ -277,13 +284,13 @@ public class BasePage {
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, locator), key).perform();
 	}
-	
-	
+
 	public void pressKeyToElement(WebDriver driver, String locator, Keys key, String... params) {
 		locator = getDynamicLocator(locator, params);
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, locator), key).perform();
 	}
+
 	public Object executeForBrowser(WebDriver driver, String javaScript) {
 		jsExecutor = (JavascriptExecutor) driver;
 		return jsExecutor.executeScript(javaScript);
@@ -421,28 +428,31 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
 
+	
+	
+	// User - Nopcommerce
 	public OrderPageObject openOrderPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ORDER_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.ORDER_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.ORDER_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.ORDER_PAGE_FOOTER);
 		return PageGeneratorManager.getOrderPage(driver);
 	}
 
 	public SearchPageObject openSearchPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.SEARCH_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.SEARCH_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.SEARCH_PAGE_FOOTER);
 		return PageGeneratorManager.getSearchPage(driver);
 	}
 
 	public MyAccountPageObject openMyAccountPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.MY_ACCOUNT_PAGE_FOOTER);
 		return PageGeneratorManager.getMyAccountPage(driver);
 	}
 
 	public BasePage getFooterPageByName(WebDriver driver, String pageName) {
 		scrollToBottomPage(driver);
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 		switch (pageName) {
 		case "Search":
 			return PageGeneratorManager.getSearchPage(driver);
@@ -455,16 +465,41 @@ public class BasePage {
 	}
 
 	public void openFooterPageByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
-
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 	}
 
+	//Admin - NopCommerce
+	public void openSubMenuPageByName(WebDriver driver, String menuPageName, String subMenuPageName) {
+		waitForElementClickable(driver, AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
+		sleepInSecond(3);
+		clickToElement(driver, AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
+		
+		waitForElementClickable(driver, AdminBasePageUI.SUB_MENU_LINK_BY_NAME, subMenuPageName);
+		clickToElement(driver, AdminBasePageUI.SUB_MENU_LINK_BY_NAME, subMenuPageName);
+	}
+	
+	public void uploadFileByCardName(WebDriver driver,String cardName, String...fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FOLDER_PATH;
+		String fullFileName = "";
+		for(String file:fileNames) {
+			fullFileName = fullFileName+filePath+file+"\n";
+		}
+		fullFileName = fullFileName.trim();
+		getElement(driver,AdminBasePageUI.UPLOAD_FILE_BY_CARD_NAME,cardName).sendKeys(fullFileName);
+	}
+	
+	public boolean isMesssageDisplayedInEmptyTable(WebDriver driver,String tableName) {
+		waitForAllElementVisible(driver, AdminBasePageUI.NO_DATA_MESSAGE_BY_TABLE_NAME,tableName);
+		return isElementDisplayed(driver, AdminBasePageUI.NO_DATA_MESSAGE_BY_TABLE_NAME,tableName);
+	}
+	
+	
 	private Alert alert;
 	private Select select;
 	private Actions action;
 	private long shortTimeout = GlobalConstants.LONG_TIMEOUT;
-	//private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
+	// private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="User - Nop Commerce" parallel="false">
+
+	<parameter name="url" value="https://demo.nopcommerce.com/" />
+
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce.login.Level_08_Register_Login_Page_Dynamic_Locator"/>
+		 
+		</classes>
+	</test>
+
+
+</suite>
