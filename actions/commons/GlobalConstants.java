@@ -3,8 +3,8 @@ package commons;
 import java.io.File;
 
 public class GlobalConstants {
-	public static final long LONG_TIMEOUT = 40;
-	public static final long SHORT_TIMEOUT = 10;
+	public static final long LONG_TIMEOUT = 30;
+	public static final long SHORT_TIMEOUT = 5;
 
 //	public static final String USER_NAME="";
 //	public static final String PASSWORD="123456";
