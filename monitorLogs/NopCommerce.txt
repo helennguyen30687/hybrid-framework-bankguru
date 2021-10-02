@@ -1,0 +1,23 @@
+[INFO ] [2021-10-02 20:11:30,847] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-02 20:11:30,860] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-02 20:11:38,483] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-02 20:11:38,666]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-02 20:11:38,668] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-02 20:11:40,185] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-02 20:11:40,317] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-02 20:11:40,628] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-02 20:11:40,855] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen8500@gmail.com
+[INFO ] [2021-10-02 20:11:41,106] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-02 20:11:41,314] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-02 20:11:41,544] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-02 20:11:46,962] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-02 20:11:47,072]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-02 20:11:47,072] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-02 20:11:51,795] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-02 20:11:51,915]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-02 20:11:52,536] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-02 20:11:54,106] User_02_login - Step 02: Enter to email textbox with value: helennguyen8500@gmail.com
+[INFO ] [2021-10-02 20:11:54,386] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-02 20:11:54,607] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-02 20:11:57,020] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-02 20:11:57,112]  -------------------------- PASSED -------------------------- 

@@ -3,12 +3,18 @@
 <suite name="User - Nop Commerce" parallel="false">
 
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
-
-	<test name="Run on FIREFOX">
-		<parameter name="browser" value="firefox" />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentTestListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
+	<test name="Run on CHROME">
+		<parameter name="browser" value="Chrome" />
 		<classes>
-			<class name="com.nopcommerce.login.Level_08_Register_Login_Page_Dynamic_Locator"/>
-		 
+			<class name="com.nopcommerce.login.Level_13_Register_Login_Log_Extent_Report_V3" />
+
 		</classes>
 	</test>
 

@@ -6,7 +6,7 @@
 	<classpathentry kind="src" path="actions"/>
 	<classpathentry kind="src" path="interfaces"/>
 	<classpathentry kind="src" path="resources"/>
-	<classpathentry kind="lib" path="libAllure/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="libAllure/testng-6.14.3.jar" sourcepath="libAllure/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/commons-codec-1.13.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/commons-collections4-4.3.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/commons-compress-1.20.jar"/>
@@ -20,6 +20,22 @@
 	<classpathentry kind="lib" path="libWebDriverManager/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/webdrivermanager-4.2.0.jar"/>
 	<classpathentry kind="lib" path="libAllure/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="libLogging/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libLogging/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libReportNG/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="libReportNG/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="libReportNG/velocity-1.4.jar"/>
+	<classpathentry kind="lib" path="libReportNG/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/extentreports-3.1.5.jar"/>
+	<classpathentry kind="lib" path="libExtendV3/freemarker-2.3.23.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

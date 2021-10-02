@@ -29,13 +29,10 @@ public class HomePageObject extends BasePage{
 		waitForElementVisible(driver, HomePageUI.HOME_PAGE_SLIDER);
 		return isElementDisplayed(driver, HomePageUI.HOME_PAGE_SLIDER);
 	}
+	
 	public SearchPageObject openSearchPage() {
 		waitForElementClickable(driver, HomePageUI.SEARCH_PAGE_FOOTER);
 		clickToElement(driver,  HomePageUI.SEARCH_PAGE_FOOTER);
 		return PageGeneratorManager.getSearchPage(driver);
 	}
-
-	
-	
-
 }
