@@ -18,7 +18,7 @@ import pageObjects.nopCommerce.RegisterPageObject;
 import pageObjects.nopCommerce.SearchPageObject;
 import pageObjects.nopCommerce.PageGeneratorManager;
 
-public class Level_13_Register_Login_Log_Extent_Report_V3 extends BaseTest {
+public class Level_13_Register_Login_Log_Extent_Report_V3_V4 extends BaseTest {
 	WebDriver driver;
 	String emailAddress, password;
 
