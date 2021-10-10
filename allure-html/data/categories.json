@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [false] but found [true]",
+      "children" : [ {
+        "name" : "User_01_Register_To_System",
+        "uid" : "3cc3157f8e8313",
+        "parentUid" : "8afcdb650a270c0a437f91131ddb6645",
+        "status" : "failed",
+        "time" : {
+          "start" : 1633422062946,
+          "stop" : 1633422077784,
+          "duration" : 14838
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome", "https://demo.nopcommerce.com/" ]
+      } ],
+      "uid" : "8afcdb650a270c0a437f91131ddb6645"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

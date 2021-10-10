@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Oct 05 15:21:02 ICT 2021","Tue Oct 05 15:21:17 ICT 2021","14838","User - Nop Commerce","Run on CHROME","com.nopcommerce.login.Level_13_Register_Login_Log_Allure","com.nopcommerce.login.Level_13_Register_Login_Log_Allure","User_01_Register_To_System","User_01_Register_To_System",""
+"passed","Tue Oct 05 15:21:17 ICT 2021","Tue Oct 05 15:21:21 ICT 2021","3982","User - Nop Commerce","Run on CHROME","com.nopcommerce.login.Level_13_Register_Login_Log_Allure","com.nopcommerce.login.Level_13_Register_Login_Log_Allure","User_02_Login_To_System","User_02_Login_To_System",""

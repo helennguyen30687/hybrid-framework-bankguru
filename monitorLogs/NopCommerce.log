@@ -484,3 +484,148 @@
 [INFO ] [2021-10-03 15:11:24,641] User_02_login - Step 04: Click On Login Button
 [INFO ] [2021-10-03 15:11:26,161] User_02_login - Step 05: Verify Home Page is displayed
 [INFO ] [2021-10-03 15:11:26,243]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 15:20:54,171] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-05 15:20:54,181] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-05 15:21:02,948] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-05 15:21:03,139]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 15:21:03,140] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-05 15:21:05,121] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-05 15:21:05,302] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-05 15:21:05,526] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-05 15:21:05,715] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen7720@gmail.com
+[INFO ] [2021-10-05 15:21:05,932] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 15:21:06,123] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-05 15:21:06,308] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-05 15:21:11,712] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-05 15:21:11,802]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 15:21:11,802] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-05 15:21:17,250] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-05 15:21:17,339]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-05 15:21:17,927] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-05 15:21:18,746] User_02_login - Step 02: Enter to email textbox with value: helennguyen7720@gmail.com
+[INFO ] [2021-10-05 15:21:19,057] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 15:21:19,239] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-05 15:21:21,822] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-05 15:21:21,907]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:37:11,300] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-05 20:37:11,349] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-05 20:37:17,660] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:37:17,909]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:37:17,912] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-05 20:37:19,491] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-05 20:37:19,660] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-05 20:37:19,905] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-05 20:37:20,126] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen7228@gmail.com
+[INFO ] [2021-10-05 20:37:20,345] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 20:37:20,536] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-05 20:37:20,750] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-05 20:37:26,069] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-05 20:37:26,157]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:37:26,157] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-05 20:37:31,503] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:37:31,594]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-05 20:37:32,275] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-05 20:37:33,630] User_02_login - Step 02: Enter to email textbox with value: helennguyen7228@gmail.com
+[INFO ] [2021-10-05 20:37:33,898] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 20:37:34,088] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-05 20:37:36,465] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:37:36,560]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:38:53,832] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-05 20:38:53,840] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-05 20:38:59,889] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:39:00,072]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:39:00,076] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-05 20:39:01,696] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-05 20:39:01,838] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-05 20:39:02,048] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-05 20:39:02,326] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen8474@gmail.com
+[INFO ] [2021-10-05 20:39:02,649] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 20:39:02,925] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-05 20:39:03,114] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-05 20:39:08,480] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-05 20:39:08,586]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 20:39:08,586] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-05 20:39:13,274] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:39:13,394]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-05 20:39:14,234] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-05 20:39:14,958] User_02_login - Step 02: Enter to email textbox with value: helennguyen8474@gmail.com
+[INFO ] [2021-10-05 20:39:15,203] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 20:39:15,411] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-05 20:39:17,805] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-05 20:39:17,901]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 21:15:03,961] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-05 21:15:03,987] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-05 21:15:10,644] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-05 21:15:10,874]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 21:15:10,879] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-05 21:15:12,595] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-05 21:15:12,748] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-05 21:15:12,992] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-05 21:15:13,192] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen9631@gmail.com
+[INFO ] [2021-10-05 21:15:13,403] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 21:15:13,588] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-05 21:15:13,771] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-05 21:15:18,962] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-05 21:15:19,050]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-05 21:15:19,050] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-05 21:15:24,441] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-05 21:15:24,514]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-05 21:15:25,064] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-05 21:15:26,302] User_02_login - Step 02: Enter to email textbox with value: helennguyen9631@gmail.com
+[INFO ] [2021-10-05 21:15:26,576] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-05 21:15:26,776] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-05 21:15:29,186] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-05 21:15:29,267]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-10 09:06:14,849] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:06:14,904] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:06:14,920] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:06:25,875] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-10 09:06:27,322]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-10 09:06:27,332] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-10 09:06:28,846] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-10 09:06:29,178] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-10 09:06:29,312] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-10 09:06:29,430] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen5250@gmail.com
+[INFO ] [2021-10-10 09:06:29,563] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-10 09:06:29,693] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-10 09:06:29,811] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-10 09:06:34,990] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-10 09:06:35,088]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-10 09:06:35,115] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-10 09:06:36,526] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-10 09:06:36,672]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-10 09:06:37,136] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-10 09:06:38,291] User_02_login - Step 02: Enter to email textbox with value: helennguyen5250@gmail.com
+[INFO ] [2021-10-10 09:06:38,474] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-10 09:06:38,602] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-10 09:06:38,856] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-10 09:06:39,874] Post-condition - Close browser
+[INFO ] [2021-10-10 09:07:55,401] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:07:55,407] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:07:55,421] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:08:04,139] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-10 09:08:04,372]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-10 09:08:04,380] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-10 09:08:05,982] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-10 09:08:06,319] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-10 09:55:43,192] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:55:43,226] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:55:43,246] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:57:41,441] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:57:41,446] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:57:41,458] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:57:50,106] Post-condition - Close browserFirefox
+[INFO ] [2021-10-10 09:57:50,106] OS name = windows 10
+[INFO ] [2021-10-10 09:57:50,106] Driver instance name = windows 10
+[INFO ] [2021-10-10 09:58:17,550] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:58:17,555] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:58:17,569] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:58:25,650] Post-condition - Close browserFirefox
+[INFO ] [2021-10-10 09:58:25,651] OS name = windows 10
+[INFO ] [2021-10-10 09:58:25,651] Driver instance name = windows 10
+[INFO ] [2021-10-10 09:58:25,778] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22488, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85834034-d482-4fb3-984d-c5fd8d647dce

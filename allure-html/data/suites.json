@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "User - Nop Commerce",
+    "children" : [ {
+      "name" : "Run on CHROME",
+      "children" : [ {
+        "name" : "com.nopcommerce.login.Level_13_Register_Login_Log_Allure",
+        "children" : [ {
+          "name" : "User_01_Register_To_System",
+          "uid" : "3cc3157f8e8313",
+          "parentUid" : "9b14335564472b60544f17333724f46c",
+          "status" : "failed",
+          "time" : {
+            "start" : 1633422062946,
+            "stop" : 1633422077784,
+            "duration" : 14838
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Chrome", "https://demo.nopcommerce.com/" ]
+        }, {
+          "name" : "User_02_Login_To_System",
+          "uid" : "c19b6ec4f30dbbe",
+          "parentUid" : "9b14335564472b60544f17333724f46c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1633422077927,
+            "stop" : 1633422081909,
+            "duration" : 3982
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Chrome", "https://demo.nopcommerce.com/" ]
+        } ],
+        "uid" : "9b14335564472b60544f17333724f46c"
+      } ],
+      "uid" : "1d71c41de4857c8f95bbf8476ef6765e"
+    } ],
+    "uid" : "4cd8cd53f705d648a02d6a7bac76b780"
+  } ]
+}

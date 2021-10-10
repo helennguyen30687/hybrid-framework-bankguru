@@ -1,0 +1,21 @@
+[ {
+  "uid" : "3cc3157f8e8313",
+  "name" : "User_01_Register_To_System",
+  "time" : {
+    "start" : 1633422062946,
+    "stop" : 1633422077784,
+    "duration" : 14838
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c19b6ec4f30dbbe",
+  "name" : "User_02_Login_To_System",
+  "time" : {
+    "start" : 1633422077927,
+    "stop" : 1633422081909,
+    "duration" : 3982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

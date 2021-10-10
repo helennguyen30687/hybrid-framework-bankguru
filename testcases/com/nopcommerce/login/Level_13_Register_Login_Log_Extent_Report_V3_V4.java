@@ -10,14 +10,22 @@ import org.testng.annotations.Test;
 
 
 import commons.BaseTest;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import pageObjects.nopCommerce.HomePageObject;
 import pageObjects.nopCommerce.LoginPageObject;
 import pageObjects.nopCommerce.MyAccountPageObject;
 import pageObjects.nopCommerce.OrderPageObject;
+import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.RegisterPageObject;
 import pageObjects.nopCommerce.SearchPageObject;
-import pageObjects.nopCommerce.PageGeneratorManager;
 
+@Epic("Web")
+@Feature("User")
 public class Level_13_Register_Login_Log_Extent_Report_V3_V4 extends BaseTest {
 	WebDriver driver;
 	String emailAddress, password;
@@ -30,10 +38,12 @@ public class Level_13_Register_Login_Log_Extent_Report_V3_V4 extends BaseTest {
 		password = "123456";
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
-
+	
+	@Story("Register")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Register to system and check to registered successfully")
 	@Test
 	public void User_01_Register_To_System(Method method) {
-		log.info("User_01_Register - Step 01: Verify Home Page is displayed");
 		verifyTrue(homePage.isHomePageSliderDisplayed());
 
 		log.info("User_01_Register - Step 02: Click to Register Link");
@@ -72,6 +82,9 @@ public class Level_13_Register_Login_Log_Extent_Report_V3_V4 extends BaseTest {
 
 	}
 
+	@Story("Login")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Login to system and check to logged in successfully")
 	@Test
 	public void User_02_Login_To_System(Method method) {
 		log.info("User_02_login - Step 01: Click To Login link");

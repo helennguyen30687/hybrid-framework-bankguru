@@ -1,6 +1,7 @@
 package com.nopcommerce.login;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -26,6 +27,7 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 		emailAddress = getRandomEmail();
 		password = "123456";
+		Assert.assertTrue(false);
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
@@ -88,10 +90,11 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
 		verifyTrue(homePage.isHomePageSliderDisplayed());
 	}
 
-	@AfterClass
-	public void afterClass() {
-		log.info("Post-condition - Close browser");
-		driver.quit();
+	@Parameters({ "browser"})
+	@AfterClass(alwaysRun = true)
+	public void afterClass(String browserName) {
+		log.info("Post-condition - Close browser"+ browserName);
+		cleanBrowserAndDriver();
 	}
 
 	HomePageObject homePage;

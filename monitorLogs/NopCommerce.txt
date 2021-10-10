@@ -1,23 +1,12 @@
-[INFO ] [2021-10-03 15:11:01,354] -------------------- START delete file in folder ------------------
-[INFO ] [2021-10-03 15:11:01,370] -------------------- END delete file in folder ------------
-[INFO ] [2021-10-03 15:11:10,871] User_01_Register - Step 01: Verify Home Page is displayed
-[INFO ] [2021-10-03 15:11:11,083]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-10-03 15:11:11,085] User_01_Register - Step 02: Click to Register Link
-[INFO ] [2021-10-03 15:11:12,538] User_01_Register - Step 03: Click to Male Radio Button
-[INFO ] [2021-10-03 15:11:12,665] User_01_Register - Step 04: Enter to First Name textbox
-[INFO ] [2021-10-03 15:11:12,880] User_01_Register - Step 05: Enter to Last Name textbox
-[INFO ] [2021-10-03 15:11:13,059] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen3338@gmail.com
-[INFO ] [2021-10-03 15:11:13,265] User_01_Register - Step 07: Enter to Password textbox with value: 123456
-[INFO ] [2021-10-03 15:11:13,453] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
-[INFO ] [2021-10-03 15:11:13,658] User_01_Register - Step 09: Click on Register Button
-[INFO ] [2021-10-03 15:11:18,118] User_01_Register - Step 10: Verify success message is displayed
-[INFO ] [2021-10-03 15:11:18,207]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-10-03 15:11:18,207] User_01_Register - Step 11: Click to Logout link
-[INFO ] [2021-10-03 15:11:22,863] User_01_Register - Step 12: Verify Home Page is displayed
-[INFO ] [2021-10-03 15:11:22,956]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-10-03 15:11:22,964] User_02_login - Step 01: Click To Login link
-[INFO ] [2021-10-03 15:11:24,175] User_02_login - Step 02: Enter to email textbox with value: helennguyen3338@gmail.com
-[INFO ] [2021-10-03 15:11:24,445] User_02_login - Step 03: Enter to Password textbox with value: 123456
-[INFO ] [2021-10-03 15:11:24,641] User_02_login - Step 04: Click On Login Button
-[INFO ] [2021-10-03 15:11:26,161] User_02_login - Step 05: Verify Home Page is displayed
-[INFO ] [2021-10-03 15:11:26,243]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-10 09:58:17,550] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 09:58:17,555] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 09:58:17,569] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 09:58:25,650] Post-condition - Close browserFirefox
+[INFO ] [2021-10-10 09:58:25,651] OS name = windows 10
+[INFO ] [2021-10-10 09:58:25,651] Driver instance name = windows 10
+[INFO ] [2021-10-10 09:58:25,778] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22488, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85834034-d482-4fb3-984d-c5fd8d647dce
