@@ -27,8 +27,8 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 		emailAddress = getRandomEmail();
 		password = "123456";
-		Assert.assertTrue(false);
 		homePage = PageGeneratorManager.getHomePage(driver);
+		
 	}
 
 	@Test
@@ -68,7 +68,8 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
 		homePage = registerPage.clickToLogOutLink();
 
 		log.info("User_01_Register - Step 12: Verify Home Page is displayed");
-		verifyFalse(homePage.isHomePageSliderDisplayed());
+		//verifyFalse(homePage.isHomePageSliderDisplayed());
+		verifyTrue(homePage.isHomePageSliderDisplayed());
 
 	}
 
@@ -90,7 +91,7 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
 		verifyTrue(homePage.isHomePageSliderDisplayed());
 	}
 
-	@Parameters({ "browser"})
+	@Parameters("browser")
 	@AfterClass(alwaysRun = true)
 	public void afterClass(String browserName) {
 		log.info("Post-condition - Close browser"+ browserName);

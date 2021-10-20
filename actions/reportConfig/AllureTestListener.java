@@ -1,8 +1,10 @@
 package reportConfig;
 
+import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -36,25 +38,28 @@ public class AllureTestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult iTestResult) {
-		Object testClass = iTestResult.getInstance();
-		WebDriver driver = ((BaseTest) testClass).getWebDriver();
-		saveScreenshotPNG(iTestResult.getName(), driver);
-		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+		try {
+			Object testClass = iTestResult.getInstance();
+			WebDriver driver = ((BaseTest) testClass).getWebDriver();
+			saveScreenshotPNG(iTestResult.getName(), driver);
+			saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+		} catch (NoSuchSessionException e) {
+			e.printStackTrace();
+		} catch (WebDriverException e) {
+			e.printStackTrace();
+		}
 	}
-	
+
 	@Override
 	public void onStart(ITestContext iTestContext) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult iTestResult) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override

@@ -629,3 +629,545 @@ System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10',
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22488, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 85834034-d482-4fb3-984d-c5fd8d647dce
+[INFO ] [2021-10-10 16:36:11,617] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 16:36:11,622] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 16:36:11,635] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 16:36:20,724] Post-condition - Close browserFirefox
+[INFO ] [2021-10-10 16:36:20,724] OS name = windows 10
+[INFO ] [2021-10-10 16:36:20,725] Driver instance name = windows 10
+[INFO ] [2021-10-10 16:36:22,155] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-10 16:36:22,158] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-10 16:36:22,160] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-10 16:36:27,171] Post-condition - Close browserChrome
+[INFO ] [2021-10-10 16:36:27,171] OS name = windows 10
+[INFO ] [2021-10-10 16:36:27,171] Driver instance name = windows 10
+[INFO ] [2021-10-13 10:46:34,334] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-13 10:46:34,334] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-13 10:46:34,369] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-13 10:46:34,369] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-13 10:46:34,397] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-13 10:46:34,397] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-13 10:46:41,895] Post-condition - Close browserChrome
+[INFO ] [2021-10-13 10:46:41,895] OS name = windows 10
+[INFO ] [2021-10-13 10:46:41,895] Driver instance name = windows 10
+[INFO ] [2021-10-13 10:46:44,258] Post-condition - Close browserFirefox
+[INFO ] [2021-10-13 10:46:44,258] OS name = windows 10
+[INFO ] [2021-10-13 10:46:44,258] 
+[INFO ] [2021-10-14 10:36:45,973] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:36:45,973] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:36:46,021] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:36:46,021] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:36:46,045] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:36:46,045] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:36:56,030] Post-condition - Close browserChrome
+[INFO ] [2021-10-14 10:36:56,030] OS name = windows 10
+[INFO ] [2021-10-14 10:36:56,030] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:37:02,068] Post-condition - Close browserFirefox
+[INFO ] [2021-10-14 10:37:02,069] OS name = windows 10
+[INFO ] [2021-10-14 10:37:02,071] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:38:32,646] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:38:32,646] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:38:32,657] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:38:32,657] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:38:32,680] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:38:32,680] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:38:40,633] Post-condition - Close browserChrome
+[INFO ] [2021-10-14 10:38:40,634] OS name = windows 10
+[INFO ] [2021-10-14 10:38:40,634] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:38:47,789] Post-condition - Close browserFirefox
+[INFO ] [2021-10-14 10:38:47,790] OS name = windows 10
+[INFO ] [2021-10-14 10:38:47,790] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:47:34,841] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:47:34,841] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:47:34,851] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:47:34,851] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:47:34,865] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:47:34,865] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:47:41,056] Post-condition - Close browserChrome
+[INFO ] [2021-10-14 10:47:41,056] OS name = windows 10
+[INFO ] [2021-10-14 10:47:41,057] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:47:45,293] Post-condition - Close browserFirefox
+[INFO ] [2021-10-14 10:47:45,294] OS name = windows 10
+[INFO ] [2021-10-14 10:47:45,294] Driver instance name = windows 10
+[INFO ] [2021-10-14 10:56:04,041] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 10:56:04,048] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 10:56:04,062] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 10:56:11,963] Post-condition - Close browserFirefox
+[INFO ] [2021-10-14 10:56:11,964] OS name = windows 10
+[INFO ] [2021-10-14 10:56:11,964] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:04:44,655] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:04:44,660] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:04:44,670] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:04:53,163] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:04:53,163] OS name = windows 10
+[INFO ] [2021-10-14 11:04:53,164] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:07:52,389] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:07:52,393] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:07:52,404] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:08:01,867] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:08:01,868] OS name = windows 10
+[INFO ] [2021-10-14 11:08:01,868] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:08:39,348] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:08:39,354] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:08:39,367] Pre-condition - Step 01: Open browser'param-val-not-found'navigate to'param-val-not-found'
+[INFO ] [2021-10-14 11:08:39,548] Post-condition - Close browserparam-val-not-found
+[INFO ] [2021-10-14 11:08:39,548] OS name = windows 10
+[INFO ] [2021-10-14 11:08:39,549] 
+[INFO ] [2021-10-14 11:09:18,173] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:09:18,179] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:09:18,190] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:09:26,433] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:09:26,434] OS name = windows 10
+[INFO ] [2021-10-14 11:09:26,435] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:10:08,827] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:10:08,833] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:10:08,843] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:10:15,856] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:10:15,856] OS name = windows 10
+[INFO ] [2021-10-14 11:10:15,856] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:12:08,815] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:12:08,819] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:12:08,831] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:12:17,166] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:12:17,166] OS name = windows 10
+[INFO ] [2021-10-14 11:12:17,166] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:19:41,155] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:19:41,159] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:19:41,171] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:19:49,750] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:19:49,750] OS name = windows 10
+[INFO ] [2021-10-14 11:19:49,750] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:21:18,848] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:21:18,852] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:21:18,863] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:21:27,169] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:21:27,169] OS name = windows 10
+[INFO ] [2021-10-14 11:21:27,169] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:22:29,870] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:22:29,874] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:22:29,885] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:22:38,289] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:22:38,289] OS name = windows 10
+[INFO ] [2021-10-14 11:22:38,289] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:25:12,233] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:25:12,236] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:25:12,254] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:25:20,225] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:25:20,225] OS name = windows 10
+[INFO ] [2021-10-14 11:25:20,225] Driver instance name = windows 10
+[INFO ] [2021-10-14 11:26:01,678] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 11:26:01,684] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 11:26:01,696] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 11:26:10,412] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 11:26:10,412] OS name = windows 10
+[INFO ] [2021-10-14 11:26:10,412] Driver instance name = windows 10
+[INFO ] [2021-10-14 14:44:41,714] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 14:44:41,718] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 14:44:41,730] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 14:44:50,397] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 14:44:50,398] OS name = windows 10
+[INFO ] [2021-10-14 14:44:50,399] Driver instance name = windows 10
+[INFO ] [2021-10-14 20:47:11,130] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-14 20:47:11,131] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-14 20:47:11,143] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 20:47:21,150] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-14 20:47:21,471]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-14 20:47:21,473] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-14 20:47:23,265] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-14 20:47:23,575] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-14 20:47:23,745] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-14 20:47:23,869] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen1994@gmail.com
+[INFO ] [2021-10-14 20:47:24,029] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-14 20:47:24,176] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-14 20:47:24,293] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-14 20:47:29,384] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-14 20:47:29,511]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-14 20:47:29,511] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-14 20:47:31,756] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-14 20:47:31,863]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-14 20:47:32,255] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-14 20:47:33,092] User_02_login - Step 02: Enter to email textbox with value: helennguyen1994@gmail.com
+[INFO ] [2021-10-14 20:47:33,980] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 20:47:33,980] OS name = windows 10
+[INFO ] [2021-10-14 20:47:33,980] Driver instance name = windows 10
+[INFO ] [2021-10-14 20:47:33,990] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18164, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba27e1fd-8356-4053-a3ce-300bf473cf19
+[INFO ] [2021-10-14 20:49:53,018] Pre-condition - Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 20:49:59,436] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-14 20:49:59,628] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 20:49:59,628] OS name = windows 10
+[INFO ] [2021-10-14 20:49:59,628] Driver instance name = windows 10
+[INFO ] [2021-10-14 20:53:39,518] Pre-condition - Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 20:53:46,146] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-14 20:53:46,336] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 20:53:46,337] OS name = windows 10
+[INFO ] [2021-10-14 20:53:46,337] Driver instance name = windows 10
+[INFO ] [2021-10-14 20:56:20,282] Pre-condition - Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 20:56:26,026] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-14 20:56:26,235] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-14 20:56:26,236] OS name = windows 10
+[INFO ] [2021-10-14 20:56:26,236] Driver instance name = windows 10
+[INFO ] [2021-10-14 21:08:47,463] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 21:08:54,391] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-14 21:08:54,591] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-14 21:08:54,591] OS name = windows 10
+[INFO ] [2021-10-14 21:08:54,591] Driver instance name = windows 10
+[INFO ] [2021-10-14 21:18:57,548] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-14 21:19:04,003] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-14 21:19:04,240] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-14 21:19:04,241] OS name = windows 10
+[INFO ] [2021-10-14 21:19:04,241] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:38:41,802] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:38:50,089] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:38:50,782] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:38:50,783] OS name = windows 10
+[INFO ] [2021-10-15 09:38:50,785] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:41:30,878] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:41:37,488] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:41:37,761] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:41:37,761] OS name = windows 10
+[INFO ] [2021-10-15 09:41:37,762] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:44:54,982] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:45:01,498] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:45:01,718] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:45:01,718] OS name = windows 10
+[INFO ] [2021-10-15 09:45:01,718] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:46:42,991] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:46:48,957] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:46:52,179] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:46:52,180] OS name = windows 10
+[INFO ] [2021-10-15 09:46:52,180] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:51:02,201] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:51:08,340] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:51:08,544] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:51:08,544] OS name = windows 10
+[INFO ] [2021-10-15 09:51:08,544] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:57:45,961] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-15 09:57:45,963] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-15 09:57:45,974] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:57:53,393] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:57:54,718] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 09:57:54,888] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:57:54,889] OS name = windows 10
+[INFO ] [2021-10-15 09:57:54,889] Driver instance name = windows 10
+[INFO ] [2021-10-15 09:58:59,425] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-15 09:58:59,429] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-15 09:58:59,441] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 09:59:08,221] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 09:59:09,537] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 09:59:09,720] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 09:59:09,720] OS name = windows 10
+[INFO ] [2021-10-15 09:59:09,721] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:00:10,264] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-15 10:00:10,300] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-15 10:00:10,318] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:00:17,965] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:00:19,301] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 10:00:19,476] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:00:19,477] OS name = windows 10
+[INFO ] [2021-10-15 10:00:19,477] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:02:13,676] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:02:20,144] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:02:20,345] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:02:20,345] OS name = windows 10
+[INFO ] [2021-10-15 10:02:20,345] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:08:26,801] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:08:36,009] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:08:36,191] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:08:36,192] OS name = windows 10
+[INFO ] [2021-10-15 10:08:36,192] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:10:40,191] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:10:40,191] OS name = windows 10
+[INFO ] [2021-10-15 10:10:40,191] 
+[INFO ] [2021-10-15 10:12:11,397] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:12:17,998] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:12:18,189] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:12:18,189] OS name = windows 10
+[INFO ] [2021-10-15 10:12:18,189] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:14:06,086] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:14:12,319] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:14:12,503] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:14:12,503] OS name = windows 10
+[INFO ] [2021-10-15 10:14:12,504] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:19:21,312] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:19:27,628] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:19:28,094] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:19:28,094] OS name = windows 10
+[INFO ] [2021-10-15 10:19:28,095] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:20:53,652] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:21:02,094] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:21:02,109] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 10:21:07,124] Pre-condition - Step 03: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:21:07,325] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:21:07,325] OS name = windows 10
+[INFO ] [2021-10-15 10:21:07,325] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:27:36,373] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:27:41,943] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:29:29,609] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:29:36,027] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:29:36,217] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:29:36,218] OS name = windows 10
+[INFO ] [2021-10-15 10:29:36,218] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:30:45,491] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-15 10:30:45,511] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-15 10:30:45,523] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:30:54,244] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:30:54,359]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:30:54,361] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-15 10:30:55,790] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-15 10:30:56,096] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-15 10:30:56,226] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-15 10:30:56,345] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen4263@gmail.com
+[INFO ] [2021-10-15 10:30:56,470] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-15 10:30:56,567] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-15 10:30:56,711] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-15 10:31:01,803] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-15 10:31:01,932]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:31:01,932] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-15 10:31:02,797] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:31:02,901]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-10-15 10:31:03,299] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:31:04,420] User_02_login - Step 02: Enter to email textbox with value: helennguyen4263@gmail.com
+[INFO ] [2021-10-15 10:31:04,552] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-15 10:31:04,672] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-15 10:31:05,497] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:31:05,606]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:31:05,618] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-15 10:31:05,618] OS name = windows 10
+[INFO ] [2021-10-15 10:31:05,619] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:31:56,122] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-15 10:31:56,126] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-15 10:31:56,138] Pre-condition - Step 01: Open browser'FIREFOX'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:32:04,534] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:32:04,662]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:32:04,663] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-15 10:32:05,322] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-15 10:32:05,630] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-15 10:32:05,766] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-15 10:32:05,875] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen8088@gmail.com
+[INFO ] [2021-10-15 10:32:06,024] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-15 10:32:06,163] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-15 10:32:06,279] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-15 10:32:11,350] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-15 10:32:11,485]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:32:11,486] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-15 10:32:13,777] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:32:13,907]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:32:14,021] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:32:15,192] User_02_login - Step 02: Enter to email textbox with value: helennguyen8088@gmail.com
+[INFO ] [2021-10-15 10:32:15,336] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-15 10:32:15,440] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-15 10:32:17,658] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-15 10:32:17,765]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 10:32:17,769] Post-condition - Close browserFIREFOX
+[INFO ] [2021-10-15 10:32:17,769] OS name = windows 10
+[INFO ] [2021-10-15 10:32:17,769] Driver instance name = windows 10
+[INFO ] [2021-10-15 10:34:50,385] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 10:34:56,765] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 10:34:56,959] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 10:34:56,959] OS name = windows 10
+[INFO ] [2021-10-15 10:34:56,959] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:17:26,075] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:17:32,760] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:17:33,057] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:17:33,057] OS name = windows 10
+[INFO ] [2021-10-15 15:17:33,057] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:30:54,177] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:31:00,570] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:31:01,839] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 15:31:06,396] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 15:31:06,582] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:31:06,582] OS name = windows 10
+[INFO ] [2021-10-15 15:31:06,582] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:34:34,657] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:34:41,191] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:34:42,585] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 15:34:47,199] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 15:34:47,375] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:34:47,375] OS name = windows 10
+[INFO ] [2021-10-15 15:34:47,375] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:35:56,407] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:36:01,785] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:36:02,803] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 15:36:07,146] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-15 15:36:21,872]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 15:36:22,050] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:36:22,050] OS name = windows 10
+[INFO ] [2021-10-15 15:36:22,050] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:37:38,571] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:37:44,549] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:37:45,424] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 15:37:50,064] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 15:37:50,256] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:37:50,256] OS name = windows 10
+[INFO ] [2021-10-15 15:37:50,256] Driver instance name = windows 10
+[INFO ] [2021-10-15 15:40:28,711] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 15:40:35,263] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 15:40:36,607] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 15:40:41,444] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 15:40:42,770] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-15 15:40:42,930]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 15:40:43,231] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 15:40:43,232] OS name = windows 10
+[INFO ] [2021-10-15 15:40:43,232] Driver instance name = windows 10
+[INFO ] [2021-10-15 16:03:20,323] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 16:03:25,646] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 16:03:26,966] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 16:03:31,682] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 16:03:33,060] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-15 16:03:33,169]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 16:03:33,463] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 16:03:33,463] OS name = windows 10
+[INFO ] [2021-10-15 16:03:33,464] Driver instance name = windows 10
+[INFO ] [2021-10-15 16:04:08,127] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-15 16:04:14,325] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-15 16:04:15,655] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-15 16:04:20,333] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-15 16:04:21,666] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-15 16:04:21,773]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-15 16:04:21,956] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-15 16:04:21,956] OS name = windows 10
+[INFO ] [2021-10-15 16:04:21,956] Driver instance name = windows 10
+[INFO ] [2021-10-16 09:47:45,236] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 09:47:52,922] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 09:47:53,470] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 09:47:53,471] OS name = windows 10
+[INFO ] [2021-10-16 09:47:53,471] Driver instance name = windows 10
+[INFO ] [2021-10-16 09:54:42,849] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 09:54:50,469] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 09:54:50,877] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 09:54:50,878] OS name = windows 10
+[INFO ] [2021-10-16 09:54:50,878] Driver instance name = windows 10
+[INFO ] [2021-10-16 09:55:48,664] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 09:55:56,340] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 09:55:56,801] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 09:55:56,802] OS name = windows 10
+[INFO ] [2021-10-16 09:55:56,802] Driver instance name = windows 10
+[INFO ] [2021-10-16 10:00:25,336] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:00:32,570] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:00:32,769] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:00:32,769] OS name = windows 10
+[INFO ] [2021-10-16 10:00:32,770] Driver instance name = windows 10
+[INFO ] [2021-10-16 10:03:08,757] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:03:16,038] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:03:16,532] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:03:16,532] OS name = windows 10
+[INFO ] [2021-10-16 10:03:16,533] Driver instance name = windows 10
+[INFO ] [2021-10-16 10:20:48,824] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:20:57,221] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:21:37,584] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:21:37,585] OS name = windows 10
+[INFO ] [2021-10-16 10:21:37,585] Driver instance name = windows 10
+[INFO ] [2021-10-16 10:31:31,267] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:32:12,635] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:32:20,399] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:32:20,840] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:33:37,747] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:33:45,413] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:34:25,700] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:34:25,701] OS name = windows 10
+[INFO ] [2021-10-16 10:34:25,701] Driver instance name = windows 10
+[INFO ] [2021-10-16 10:42:13,810] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 10:42:21,534] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 10:42:21,995] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 10:42:21,996] OS name = windows 10
+[INFO ] [2021-10-16 10:42:21,996] Driver instance name = windows 10
+[INFO ] [2021-10-16 20:24:07,815] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 20:24:15,824] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 20:24:16,255] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 20:24:16,256] OS name = windows 10
+[INFO ] [2021-10-16 20:24:16,256] Driver instance name = windows 10
+[INFO ] [2021-10-16 20:28:56,611] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 20:29:05,423] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 20:29:05,790] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 20:29:05,790] OS name = windows 10
+[INFO ] [2021-10-16 20:29:05,790] Driver instance name = windows 10
+[INFO ] [2021-10-16 20:31:20,527] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 20:31:27,367] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 20:31:27,578] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 20:31:27,578] OS name = windows 10
+[INFO ] [2021-10-16 20:31:27,578] Driver instance name = windows 10
+[INFO ] [2021-10-16 20:33:12,060] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-16 20:33:18,180] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-16 20:33:18,387] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-16 20:33:18,388] OS name = windows 10
+[INFO ] [2021-10-16 20:33:18,388] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:02:37,959] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:02:44,395] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:02:44,665] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-17 16:02:44,665] OS name = windows 10
+[INFO ] [2021-10-17 16:02:44,665] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:06:07,837] Pre-condition - Open browser 'FIREFOX' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:06:14,182] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:06:14,393] Post-condition - Close browser FIREFOX
+[INFO ] [2021-10-17 16:06:14,393] OS name = windows 10
+[INFO ] [2021-10-17 16:06:14,394] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:10:11,152] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-17 16:10:11,157] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-17 16:10:11,168] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:10:19,183] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-17 16:10:58,897] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:11:06,373] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-17 16:11:06,375] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-17 16:11:06,391] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:11:11,006] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-17 16:11:11,140]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-17 16:11:11,142] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-17 16:11:11,827] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-17 16:11:11,968] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-17 16:11:12,164] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-17 16:11:12,344] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen1215@gmail.com
+[INFO ] [2021-10-17 16:11:12,561] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-17 16:11:12,760] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-17 16:11:12,960] User_01_Register - Step 09: Click on Register Button
+[INFO ] [2021-10-17 16:11:17,730] User_01_Register - Step 10: Verify success message is displayed
+[INFO ] [2021-10-17 16:11:17,818]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-17 16:11:17,819] User_01_Register - Step 11: Click to Logout link
+[INFO ] [2021-10-17 16:11:23,159] User_01_Register - Step 12: Verify Home Page is displayed
+[INFO ] [2021-10-17 16:11:23,249]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-17 16:11:23,341] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:11:25,056] User_02_login - Step 02: Enter to email textbox with value: helennguyen1215@gmail.com
+[INFO ] [2021-10-17 16:11:25,297] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-17 16:11:25,518] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-17 16:11:29,014] Post-condition - Close browserChrome
+[INFO ] [2021-10-17 16:11:29,014] OS name = windows 10
+[INFO ] [2021-10-17 16:11:29,015] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:11:29,026] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\thanh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 952ec537d15473b4c69b789f9fb30612
+[INFO ] [2021-10-17 16:11:30,170] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-17 16:11:38,416] Post-condition - Close browserChrome
+[INFO ] [2021-10-17 16:11:38,417] OS name = windows 10
+[INFO ] [2021-10-17 16:11:38,417] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:11:42,476] java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:12942
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-10-17 16:12:32,094] Pre-condition - Open browser 'Chrome' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:12:35,979] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:12:36,172] Post-condition - Close browser Chrome
+[INFO ] [2021-10-17 16:12:36,172] OS name = windows 10
+[INFO ] [2021-10-17 16:12:36,172] Driver instance name = windows 10
+[INFO ] [2021-10-17 16:15:27,350] Pre-condition - Open browser 'Chrome' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 16:15:30,840] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 16:15:31,032] Post-condition - Close browser Chrome
+[INFO ] [2021-10-17 16:15:31,033] OS name = windows 10
+[INFO ] [2021-10-17 16:15:31,033] Driver instance name = windows 10
+[INFO ] [2021-10-17 18:50:09,858] Pre-condition - Open browser 'Chrome' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 18:50:14,416] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 18:50:15,956] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-17 18:50:19,128] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-17 18:50:21,575] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-17 18:50:21,700]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-17 18:50:22,177] Post-condition - Close browser Chrome
+[INFO ] [2021-10-17 18:50:22,177] OS name = windows 10
+[INFO ] [2021-10-17 18:50:22,179] Driver instance name = windows 10

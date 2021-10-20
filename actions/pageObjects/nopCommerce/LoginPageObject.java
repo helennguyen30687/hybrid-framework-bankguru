@@ -30,6 +30,16 @@ public class LoginPageObject extends BasePage {
 	public HomePageObject clickOnLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		if (driver.toString().contains("chrome") || driver.toString().contains("edge")) {
+			sleepInSecond(3);
+		}
+		return PageGeneratorManager.getHomePage(driver);
+	}
+
+	public HomePageObject openHomePage(WebDriver driver) {
+System.out.println("olala");
+		waitForElementClickable(driver, LoginPageUI.HOMEPAGE_IMG);
+		clickToElement(driver, LoginPageUI.HOMEPAGE_IMG);
 		return PageGeneratorManager.getHomePage(driver);
 	}
 

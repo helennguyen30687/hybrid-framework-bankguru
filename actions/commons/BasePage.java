@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -16,15 +17,12 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-import pageObjects.admin.nopCommerce.ProductSearchPO;
 import pageObjects.nopCommerce.MyAccountPageObject;
 import pageObjects.nopCommerce.OrderPageObject;
 import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.SearchPageObject;
 import pageUI.admin.nopCommerce.AdminBasePageUI;
-import pageUI.admin.nopCommerce.ProductDetailUI;
 import pageUIs.nopCommerce.UserBasePageUI;
 
 public class BasePage {
@@ -46,6 +44,17 @@ public class BasePage {
 
 	public String getPageSource(WebDriver driver) {
 		return driver.getPageSource();
+	}
+
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+
+	public void setAllCookies(WebDriver driver, Set<Cookie> allCookies) {
+		for (Cookie cookie : allCookies) {
+			driver.manage().addCookie(cookie);
+		}
+
 	}
 
 	public Alert waitForAlertPresence(WebDriver driver) {
@@ -272,7 +281,7 @@ public class BasePage {
 			return false;
 		}
 	}
-	
+
 	public void overrideGlobalTimeout(WebDriver driver, long timeout) {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 	}
@@ -463,11 +472,12 @@ public class BasePage {
 		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
-	public void waitForElementInvisible(WebDriver driver, String locator,String...params) {
+
+	public void waitForElementInvisible(WebDriver driver, String locator, String... params) {
 		explicitWait = new WebDriverWait(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(getDynamicLocator(locator, params))));
 	}
-	
+
 	// User - Nopcommerce
 	public OrderPageObject openOrderPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.ORDER_PAGE_FOOTER);

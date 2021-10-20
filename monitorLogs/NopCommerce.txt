@@ -1,12 +1,9 @@
-[INFO ] [2021-10-10 09:58:17,550] -------------------- START delete file in folder ------------------
-[INFO ] [2021-10-10 09:58:17,555] -------------------- END delete file in folder ------------
-[INFO ] [2021-10-10 09:58:17,569] Pre-condition - Step 01: Open browser'Firefox'navigate to'https://demo.nopcommerce.com/'
-[INFO ] [2021-10-10 09:58:25,650] Post-condition - Close browserFirefox
-[INFO ] [2021-10-10 09:58:25,651] OS name = windows 10
-[INFO ] [2021-10-10 09:58:25,651] Driver instance name = windows 10
-[INFO ] [2021-10-10 09:58:25,778] Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22488, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 85834034-d482-4fb3-984d-c5fd8d647dce
+[INFO ] [2021-10-17 18:50:09,858] Pre-condition - Open browser 'Chrome' navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-17 18:50:14,416] Pre-condition - Step 01: Click To Login link
+[INFO ] [2021-10-17 18:50:15,956] Pre-condition - Step 02: Set login page cookie
+[INFO ] [2021-10-17 18:50:19,128] Pre-condition - Step 03: Click to HomePage displayed
+[INFO ] [2021-10-17 18:50:21,575] Pre-condition - Step 04: Verify Home Page is displayed
+[INFO ] [2021-10-17 18:50:21,700]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-17 18:50:22,177] Post-condition - Close browser Chrome
+[INFO ] [2021-10-17 18:50:22,177] OS name = windows 10
+[INFO ] [2021-10-17 18:50:22,179] Driver instance name = windows 10

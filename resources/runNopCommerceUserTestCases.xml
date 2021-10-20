@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="User - Nop Commerce" parallel="false">
+<suite name="User - Nop Commerce" parallel="tests" thread-count="3">
 
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<listeners>
-	<!--	<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentTestListener" />
-		<listener class-name="reportConfig.AllureTestListener" />
-	<!--	<listener class-name="reportConfig.ReportNGListener" />-->
+		<!--	<listener class-name="reportConfig.AllureTestListener" />-->
+		<listener class-name="reportConfig.ReportNGListener" />
 	</listeners>
-	<test name="Run on Firefox">
-		<parameter name="browser" value="Firefox" />
+
+	<!--<test name="Run on Firefox">
+		<parameter name="browser" value="FIREFOX" />
 		<classes>
-			<class name="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG" />
+			<class name="com.nopcommerce.common.Common_01_Login" /> 
+			<class name="com.nopcommerce.login.Level_14_Register_Login_Share_State" />
+		</classes>
+	</test>-->
+	<test name="Run on Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.nopcommerce.common.Common_01_Login" />
+			<class name="com.nopcommerce.login.Level_14_Register_Login_Share_State" />
 
 		</classes>
 	</test>
-
 
 </suite>
