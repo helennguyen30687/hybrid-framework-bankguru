@@ -1,9 +1,30 @@
-[INFO ] [2021-10-17 18:50:09,858] Pre-condition - Open browser 'Chrome' navigate to 'https://demo.nopcommerce.com/'
-[INFO ] [2021-10-17 18:50:14,416] Pre-condition - Step 01: Click To Login link
-[INFO ] [2021-10-17 18:50:15,956] Pre-condition - Step 02: Set login page cookie
-[INFO ] [2021-10-17 18:50:19,128] Pre-condition - Step 03: Click to HomePage displayed
-[INFO ] [2021-10-17 18:50:21,575] Pre-condition - Step 04: Verify Home Page is displayed
-[INFO ] [2021-10-17 18:50:21,700]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-10-17 18:50:22,177] Post-condition - Close browser Chrome
-[INFO ] [2021-10-17 18:50:22,177] OS name = windows 10
-[INFO ] [2021-10-17 18:50:22,179] Driver instance name = windows 10
+[INFO ] [2021-10-21 20:33:49,782] -------------------- START delete file in folder ------------------
+[INFO ] [2021-10-21 20:33:49,786] -------------------- END delete file in folder ------------
+[INFO ] [2021-10-21 20:33:49,799] Pre-condition - Step 01: Open browser'Chrome'navigate to'https://demo.nopcommerce.com/'
+[INFO ] [2021-10-21 20:33:54,505] User_01_Register - Step 01: Verify Home Page is displayed
+[INFO ] [2021-10-21 20:33:54,640]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-21 20:33:54,643] User_01_Register - Step 02: Click to Register Link
+[INFO ] [2021-10-21 20:33:56,162] User_01_Register - Step 03: Click to Male Radio Button
+[INFO ] [2021-10-21 20:33:56,303] User_01_Register - Step 04: Enter to First Name textbox
+[INFO ] [2021-10-21 20:33:56,505] User_01_Register - Step 05: Enter to Last Name textbox
+[INFO ] [2021-10-21 20:33:56,704] User_01_Register - Step 06: Enter to Email textbox with value: helennguyen5773@gmail.com
+[INFO ] [2021-10-21 20:33:56,924] User_01_Register - Step 07: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-21 20:33:57,124] User_01_Register - Step 08: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-10-21 20:33:57,310] User_01_Register - Step 09: Select item in Date dropdown
+[INFO ] [2021-10-21 20:33:57,425] User_01_Register - Step 10: Select item in Month dropdown
+[INFO ] [2021-10-21 20:33:57,551] User_01_Register - Step 11: Select item in Year dropdown
+[INFO ] [2021-10-21 20:33:57,670] User_01_Register - Step 12: Click on Register Button
+[INFO ] [2021-10-21 20:34:02,890] User_01_Register - Step 13: Verify success message is displayed
+[INFO ] [2021-10-21 20:34:02,980]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-21 20:34:02,981] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-10-21 20:34:04,562] User_01_Register - Step 15: Verify Home Page is displayed
+[INFO ] [2021-10-21 20:34:04,680]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-21 20:34:04,854] User_02_login - Step 01: Click To Login link
+[INFO ] [2021-10-21 20:34:05,383] User_02_login - Step 02: Enter to email textbox with value: helennguyen5773@gmail.com
+[INFO ] [2021-10-21 20:34:05,572] User_02_login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-10-21 20:34:05,743] User_02_login - Step 04: Click On Login Button
+[INFO ] [2021-10-21 20:34:06,610] User_02_login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-10-21 20:34:06,696]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-10-21 20:34:06,704] Post-condition - Close browserChrome
+[INFO ] [2021-10-21 20:34:06,704] OS name = windows 10
+[INFO ] [2021-10-21 20:34:06,704] Driver instance name = windows 10
