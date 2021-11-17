@@ -16,7 +16,7 @@ import pageObjects.hrm.PageGenerator;
 import utilities.DataHelper;
 import pageObjects.hrm.MyInfoPageObject;
 
-public class Level_16_Live_Coding extends BaseTest {
+public class Level_19_Fake_Data extends BaseTest { 
 	WebDriver driver;
 	String adminUserName, adminPassword, empFirstName, empLastName, empFullName, empUserName, empPassword, statusValue, employeeID;
 	String avatarFilePath = GlobalConstants.UPLOAD_FOLDER_PATH + "Avatar.jpg";
@@ -30,18 +30,20 @@ public class Level_16_Live_Coding extends BaseTest {
 	public void beforeClass(String browserName, String appUrl) {
 		log.info("Pre-condition - Step 01: Open browser'" + browserName + "'navigate to'" + appUrl + "'");
 		driver = getBrowserDriver(browserName, appUrl);
-		loginPage = PageGenerator.getLoginPage(driver); 
+		loginPage = PageGenerator.getLoginPage(driver);
+		fakeData = DataHelper.getData()	;
+		
 		statusValue = "Enabled";
 		adminUserName = "Admin";
 		adminPassword = "admin123";
-		empFirstName = "Helen";
-		empLastName = "Tran";
+		empFirstName = fakeData.getFirstName();
+		empLastName = fakeData.getLastName();
 		empFullName = empFirstName + " " + empLastName;
-		empUserName = "Helentran124";
-		empPassword = "Helentran124";
+		empUserName = fakeData.getUserName();
+		empPassword = fakeData.getPassword();
 
-		editEmpFirstName = "John";
-		editEmpLastName = "Wick";
+		editEmpFirstName = fakeData.getFirstName();
+		editEmpLastName = fakeData.getLastName();
 		editEmpGender = "Male";
 		editEmpMaritalStatus = "Single";
 		editEmpNational = "Vietnamese";
@@ -230,7 +232,7 @@ public class Level_16_Live_Coding extends BaseTest {
 		verifyEquals(myInfoPage.getTextboxValueByIDHRM(driver, "personal_txtEmployeeId"), employeeID);
 	}
 
-	@Test
+	//@Test
 	public void Employee_04_Edit_Contact_Details() {
 		log.info("Contact_Details_04 - Step 01: Open 'Contact Details' tab at Side bar");
 		myInfoPage.openTabAtSideBarByName("Contact Details");
@@ -325,42 +327,42 @@ public class Level_16_Live_Coding extends BaseTest {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_05_Emergency_Details() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_06_Assigned_Dependents() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_07_Edit_View_Job() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_08_Edit_View_Salary() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_09_Edit_View_Tax() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_10_Qualifications() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_11_Search_Employee() {
 
 	}
 
-	@Test
+//	@Test
 	public void Employee_12_Memberships() {
 		log.info("Membership_12 - Step 01: Open 'Add Membership' tab at Side bar");
 		myInfoPage.openTabAtSideBarByName("Memberships");
@@ -414,4 +416,5 @@ public class Level_16_Live_Coding extends BaseTest {
 	EmployeeListPageObject employeeListPage;
 	LoginPageObject loginPage;
 	MyInfoPageObject myInfoPage;
+	DataHelper fakeData;
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="HRM">
+<suite name="Sauce Lab">
 
-	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+	<parameter name="url" value="https://www.saucedemo.com/" />
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -10,20 +10,12 @@
 		<listener class-name="reportConfig.ExtentTestListener" />
 		<listener class-name="reportConfig.ReportNGListener" />
 	</listeners>
-
-	<test name="Run on Firefox">
-		<parameter name="browser" value="FIREFOX" />
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.hrm.employee.Level_19_Fake_Data" />
+			<class name="com.saucelab.sort.Level_18_Sort" />
 		</classes>
 	</test>
-	<test name="Run on Chrome">
-		<parameter name="browser" value="Chrome" />
-		<classes>
-		
-			<class name="com.hrm.employee.Level_19_Fake_Data" />
 
-		</classes>
-	</test>
 
 </suite>

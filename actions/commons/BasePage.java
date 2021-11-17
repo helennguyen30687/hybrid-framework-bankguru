@@ -776,6 +776,7 @@ public class BasePage {
 		return isElementEnabled(driver, BasePageUI.ANY_FIELD, fieldID);
 	}
 
+
 	private Alert alert;
 	private Select select;
 	private Actions action;
