@@ -739,6 +739,7 @@ public class BasePage {
 	}
 
 	public String getValueInTableAtRowIndexAndColumnName(WebDriver driver, String tableID, String headerName, String rowIndex) {
+		sleepInSecond(3);
 		int columnIndex = getElementSize(driver, BasePageUI.TABLE_HEADER_BY_ID_AND_NAME, tableID, headerName) + 1;
 		waitForAllElementVisible(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex, String.valueOf(columnIndex));
 		return getElementText(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex, String.valueOf(columnIndex));

@@ -1,0 +1,14 @@
+{
+	"firstname": "Helenjson",
+	"lastname": "Nguyen",
+	"fullname": "Helenjson Nguyen",
+	"username": "Helentran125",
+	"password": "Helentran125",
+	"ContactDetail": {
+		"editEmpFirstName": "Johnjson",
+		"editEmpLastName": "Wick",
+		"editEmpGender": "Male",
+		"editEmpMaritalStatus": "Single",
+		"editEmpNational": "Vietnamese"
+	}
+}

@@ -3,6 +3,23 @@
 <suite name="HRM">
 
 	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+
+<!--	<parameter name="adminUsername" value="Admin" />
+	<parameter name="adminPassword" value="admin123" />
+
+	<parameter name="firstname" value="John" />
+	<parameter name="lastname" value="Wick" />
+	<parameter name="fullname" value="John Wick" />
+	<parameter name="username" value="johnwick123" />
+	<parameter name="password" value="Johnwick#123" />
+	<parameter name="statusValue" value="Enabled" />
+
+	<parameter name="editEmpFirstName" value="Thierry" />
+	<parameter name="editEmpLastName" value="Henry" />
+	<parameter name="editEmpGender" value="Male" />
+	<parameter name="editEmpMaritalStatus" value="Single" />
+	<parameter name="editEmpNational" value="Vietnamese" /> -->
+
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -11,19 +28,16 @@
 		<listener class-name="reportConfig.ReportNGListener" />
 	</listeners>
 
-	<test name="Run on Firefox">
+	<!--<test name="Run on Firefox ">
 		<parameter name="browser" value="FIREFOX" />
 		<classes>
-			<class name="com.hrm.employee.Level_19_Fake_Data" />
+			<class name="com.hrm.employee.Level_16_Live_Coding"/>
 		</classes>
-	</test>
-	<test name="Run on Chrome">
-		<parameter name="browser" value="Chrome" />
+	</test>-->
+	<test name="Run on IE">
+			<parameter name="browser" value="IE" />
 		<classes>
-		
-			<class name="com.hrm.employee.Level_19_Fake_Data" />
-
+			<class name="com.hrm.employee.Level_16_Live_Coding"/>
 		</classes>
-	</test>
-
+	</test> 
 </suite>

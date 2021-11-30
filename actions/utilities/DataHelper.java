@@ -30,7 +30,7 @@ public class DataHelper {
 	}
 
 	public String getPassword() {
-		return faker.internet().password();
+		return faker.internet().password(); 
 	}
 	public String getEditFirstName() {
 		return faker.name().firstName();

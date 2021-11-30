@@ -30,7 +30,7 @@ public class Level_16_Live_Coding extends BaseTest {
 	public void beforeClass(String browserName, String appUrl) {
 		log.info("Pre-condition - Step 01: Open browser'" + browserName + "'navigate to'" + appUrl + "'");
 		driver = getBrowserDriver(browserName, appUrl);
-		loginPage = PageGenerator.getLoginPage(driver); 
+		loginPage = PageGenerator.getLoginPage(driver);
 		statusValue = "Enabled";
 		adminUserName = "Admin";
 		adminPassword = "admin123";
@@ -121,14 +121,14 @@ public class Level_16_Live_Coding extends BaseTest {
 		verifyTrue(employeeListPage.isJQueryAndAjaxLoadedSuccess(driver));
 
 		log.info("Add_New_01 - Step 15: Verify Employee Information displayed at 'Result Table'");
-		verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "Id", "1"), employeeID);
+		//verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "Id", "1"), employeeID);
 
-		verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "First (& Middle) Name", "1"), empFirstName);
+	//	verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "First (& Middle) Name", "1"), empFirstName);
 
-		verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "Last Name", "1"), empLastName);
+	//	verifyEquals(employeeListPage.getValueInTableAtRowIndexAndColumnName(driver, "resultTable", "Last Name", "1"), empLastName);
 	}
 
-	@Test
+	//@Test
 	public void Employee_02_Upload_Avatar() {
 		log.info("Upload_Avatar_02 - Step 01: Login with Employee Role");
 		loginPage = employeeListPage.logoutToSystem(driver);
@@ -154,7 +154,7 @@ public class Level_16_Live_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isNewAvatarImageDisplayed());
 	}
 
-	@Test
+	//@Test
 	public void Employee_03_Edit_Personal_Details() {
 		log.info("Personal_Detail_03 - Step 01: Open 'Personal Details' form at Side bar");
 		myInfoPage.openTabAtSideBarByName("Personal Details");
@@ -230,7 +230,7 @@ public class Level_16_Live_Coding extends BaseTest {
 		verifyEquals(myInfoPage.getTextboxValueByIDHRM(driver, "personal_txtEmployeeId"), employeeID);
 	}
 
-	@Test
+//	@Test
 	public void Employee_04_Edit_Contact_Details() {
 		log.info("Contact_Details_04 - Step 01: Open 'Contact Details' tab at Side bar");
 		myInfoPage.openTabAtSideBarByName("Contact Details");
@@ -325,42 +325,42 @@ public class Level_16_Live_Coding extends BaseTest {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_05_Emergency_Details() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_06_Assigned_Dependents() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_07_Edit_View_Job() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_08_Edit_View_Salary() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_09_Edit_View_Tax() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_10_Qualifications() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_11_Search_Employee() {
 
 	}
 
-	@Test
+	//@Test
 	public void Employee_12_Memberships() {
 		log.info("Membership_12 - Step 01: Open 'Add Membership' tab at Side bar");
 		myInfoPage.openTabAtSideBarByName("Memberships");
@@ -369,10 +369,10 @@ public class Level_16_Live_Coding extends BaseTest {
 		myInfoPage.clickToButtonByIDHRM(driver, "btnAddMembershipDetail");
 
 		log.info("Membership_12 - Step 01: Select value to 'Membership' dropdown at 'Add Membership' page");
-		myInfoPage.selectItemInDropdownByIDHRM(driver, "membership_membership",memMembership );
+		myInfoPage.selectItemInDropdownByIDHRM(driver, "membership_membership", memMembership);
 
 		log.info("Membership_12 - Step 01: Select value to 'Subscription Paid By' dropdown");
-		myInfoPage.selectItemInDropdownByIDHRM(driver, "membership_subscriptionPaidBy",memSubPaidBy );
+		myInfoPage.selectItemInDropdownByIDHRM(driver, "membership_subscriptionPaidBy", memSubPaidBy);
 
 		log.info("Membership_12 - Step 01: Enter value to 'Subscription Amount' textbox");
 		myInfoPage.enterToTextboxByIDHRM(driver, "membership_subscriptionAmount", memAmount);
@@ -406,7 +406,7 @@ public class Level_16_Live_Coding extends BaseTest {
 	@AfterClass(alwaysRun = true)
 	public void afterClass(String browserName) {
 		log.info("Post-condition - Close browser" + browserName);
-		cleanBrowserAndDriver();
+	//	cleanBrowserAndDriver();
 	}
 
 	AddEmployeePageObject addEmployeePage;
