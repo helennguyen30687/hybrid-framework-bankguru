@@ -28,16 +28,16 @@
 		<listener class-name="reportConfig.ReportNGListener" />
 	</listeners>
 
-	<!--<test name="Run on Firefox ">
+	<test name="Run on Firefox ">
 		<parameter name="browser" value="FIREFOX" />
 		<classes>
 			<class name="com.hrm.employee.Level_16_Live_Coding"/>
 		</classes>
-	</test>-->
-	<test name="Run on IE">
+	</test>
+<!--	<test name="Run on IE">
 			<parameter name="browser" value="IE" />
 		<classes>
 			<class name="com.hrm.employee.Level_16_Live_Coding"/>
 		</classes>
-	</test> 
+	</test> -->
 </suite>

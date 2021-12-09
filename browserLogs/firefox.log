@@ -1,6 +1,27 @@
-1637932366075	geckodriver	INFO	Listening on 127.0.0.1:25474
-1637932366804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\thanh\\AppData\\Local\\Temp\\rust_mozprofile32cZ4l"
-1637932367269	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\thanh\\AppData\\Local\\Temp\\rust_mozprofile32cZ4l\\search.json.mozlz4", (void 0)))
-1637932369916	Marionette	INFO	Listening on port 64669
-1637932369993	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638449334487	geckodriver	INFO	Listening on 127.0.0.1:8269
+1638449335434	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\thanh\\AppData\\Local\\Temp\\rust_mozprofile9xxXZq"
+1638449335854	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\thanh\\AppData\\Local\\Temp\\rust_mozprofile9xxXZq\\search.json.mozlz4", (void 0)))
+1638449338702	Marionette	INFO	Listening on port 64031
+1638449339109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638449349700	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+send@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:81476
+ajax@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:77295
+k._evalUrl@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:79350
+Ie@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:48088
+append@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:49520
+html/<@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:50612
+_@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:31840
+html@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:50290
+success@https://opensource-demo.orangehrmlive.com/index.php/dashboard:1253:36
+c@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:27742
+fireWith@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:28487
+l@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:78789
+o/<@https://opensource-demo.orangehrmlive.com/webres_6051af48107ce6.31500353/js/jquery/jquery-3.4.1.min.js:2:81117
+1638449354736	Marionette	INFO	Stopped listening on port 64031
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]

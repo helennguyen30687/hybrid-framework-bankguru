@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Live Guru]">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Live Guru]" parallel="tests">
   <parameter name="url" value="http://live.demoguru99.com/index.php"/>
-  <test thread-count="5" name="Run on FIREFOX(failed)">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.ExtentTestListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+  </listeners>
+  <test thread-count="3" name="Run on FIREFOX(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.liveguru.login.Level_04_Register_Multiple_Browser">
+      <class name="com.liveguru.login.Level_17_Independece_Test">
         <methods>
-          <include name="Login_05_Incorrect_Password"/>
-          <include name="beforeClass"/>
+          <include name="Login_04_Incorrect_Email"/>
+          <include name="Login_02_Invalid_Email"/>
+          <include name="deleteAllFilesInScreenShotReportNG"/>
+          <include name="afterMethod"/>
+          <include name="Login_01_Empty_Email_Password"/>
           <include name="Login_06_Valid_Email_Password"/>
+          <include name="Login_05_Incorrect_Password"/>
+          <include name="Login_03_Invalid_Password"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.liveguru.login.Level_04_Register_Multiple_Browser -->
+      </class> <!-- com.liveguru.login.Level_17_Independece_Test -->
     </classes>
   </test> <!-- Run on FIREFOX(failed) -->
 </suite> <!-- Failed suite [Live Guru] -->

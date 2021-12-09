@@ -8,11 +8,33 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Admin - Nop Commerce</th></tr>
-<tr><td><a href="#t0">Run on FIREFOX</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">52,039</td><td></td><td></td></tr>
+<tr><th colspan="7">HRM</th></tr>
+<tr><td><a href="#t0">Run on Firefox </a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,943</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Admin - Nop Commerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on FIREFOX &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.admin.Level_10_Admin_Upload_File</td><td><a href="#m0">Admin_01_Upload_File</a></td><td rowspan="1">1631623168035</td><td rowspan="1">29377</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">HRM</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Firefox  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hrm.employee.Level_16_Live_Coding</td><td><a href="#m0">Employee_01_Add_New_Employee</a></td><td rowspan="1">1638449349048</td><td rowspan="1">5774</td></tr></tbody>
 </table>
-<h2>Run on FIREFOX</h2><h3 id="m0">com.nopcommerce.admin.Level_10_Admin_Upload_File#Admin_01_Upload_File</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on Firefox </h2><h3 id="m0">com.hrm.employee.Level_16_Live_Coding#Employee_01_Add_New_Employee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-HJ8VKPG&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211119140621, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9884, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb399c7d-ef8a-402c-b436-1c0a2e975a55
+*** Element info: {Using=xpath, value=.//option[normalize-space(.) = &quot;Enabled&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:265)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:177)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:113)
+	at commons.BasePage.selectDropdownByText(BasePage.java:200)
+	at commons.BasePage.selectItemInDropdownByIDHRM(BasePage.java:696)
+	at com.hrm.employee.Level_16_Live_Coding.Employee_01_Add_New_Employee(Level_16_Live_Coding.java:104)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

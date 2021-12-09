@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Datatable]">
-  <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/>
-  <test thread-count="5" name="Run on FIREFOX(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HRM]">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="reportConfig.MethodListener"/>
+    <listener class-name="reportConfig.ExtentTestListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on Firefox (failed)">
+    <parameter name="browser" value="FIREFOX"/>
     <classes>
-      <class name="com.jquery.datatable.Level_09_DataTable">
+      <class name="com.hrm.employee.Level_16_Live_Coding">
         <methods>
-          <include name="Table_04_Verify_Data"/>
+          <include name="deleteAllFilesInScreenShotReportNG"/>
+          <include name="Employee_01_Add_New_Employee"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.jquery.datatable.Level_09_DataTable -->
+      </class> <!-- com.hrm.employee.Level_16_Live_Coding -->
     </classes>
-  </test> <!-- Run on FIREFOX(failed) -->
-</suite> <!-- Failed suite [Datatable] -->
+  </test> <!-- Run on Firefox (failed) -->
+</suite> <!-- Failed suite [HRM] -->

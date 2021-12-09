@@ -1,33 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Admin - Nop Commerce" duration-ms="52039" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:57Z">
+  <suite name="HRM" duration-ms="21943" started-at="2021-12-02T12:48:53Z" finished-at="2021-12-02T12:49:15Z">
     <groups>
     </groups>
-    <test name="Run on FIREFOX" duration-ms="52039" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:57Z">
-      <class name="com.nopcommerce.admin.Level_10_Admin_Upload_File">
-        <test-method status="PASS" signature="productImgName(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@20e2cbe0]" name="productImgName" is-config="true" duration-ms="22641" started-at="2021-09-14T12:39:05Z" finished-at="2021-09-14T12:39:28Z">
+    <test name="Run on Firefox " duration-ms="21943" started-at="2021-12-02T12:48:53Z" finished-at="2021-12-02T12:49:15Z">
+      <class name="com.hrm.employee.Level_16_Live_Coding">
+        <test-method status="PASS" signature="deleteAllFilesInScreenShotReportNG()[pri:0, instance:com.hrm.employee.Level_16_Live_Coding@4f18837a]" name="deleteAllFilesInScreenShotReportNG" is-config="true" duration-ms="41" started-at="2021-12-02T12:48:53Z" finished-at="2021-12-02T12:48:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllFilesInScreenShotReportNG -->
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.hrm.employee.Level_16_Live_Coding@4f18837a]" name="beforeClass" is-config="true" duration-ms="15818" started-at="2021-12-02T12:48:53Z" finished-at="2021-12-02T12:49:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[FIREFOX]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F]]>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productImgName -->
-        <test-method status="PASS" signature="Admin_01_Upload_File()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@20e2cbe0]" name="Admin_01_Upload_File" duration-ms="29377" started-at="2021-09-14T12:39:28Z" finished-at="2021-09-14T12:39:57Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="Employee_01_Add_New_Employee()[pri:0, instance:com.hrm.employee.Level_16_Live_Coding@4f18837a]" name="Employee_01_Add_New_Employee" duration-ms="5774" started-at="2021-12-02T12:49:09Z" finished-at="2021-12-02T12:49:14Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211119140621, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9884, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb399c7d-ef8a-402c-b436-1c0a2e975a55
+*** Element info: {Using=xpath, value=.//option[normalize-space(.) = "Enabled"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-HJ8VKPG', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211119140621, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9884, moz:profile: C:\Users\thanh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb399c7d-ef8a-402c-b436-1c0a2e975a55
+*** Element info: {Using=xpath, value=.//option[normalize-space(.) = "Enabled"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)
+at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:265)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:177)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:113)
+at commons.BasePage.selectDropdownByText(BasePage.java:200)
+at commons.BasePage.selectItemInDropdownByIDHRM(BasePage.java:696)
+at com.hrm.employee.Level_16_Live_Coding.Employee_01_Add_New_Employee(Level_16_Live_Coding.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Admin_01_Upload_File -->
-      </class> <!-- com.nopcommerce.admin.Level_10_Admin_Upload_File -->
-    </test> <!-- Run on FIREFOX -->
-  </suite> <!-- Admin - Nop Commerce -->
+        </test-method> <!-- Employee_01_Add_New_Employee -->
+        <test-method status="PASS" signature="afterClass(java.lang.String)[pri:0, instance:com.hrm.employee.Level_16_Live_Coding@4f18837a]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-02T12:49:15Z" finished-at="2021-12-02T12:49:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.hrm.employee.Level_16_Live_Coding -->
+    </test> <!-- Run on Firefox  -->
+  </suite> <!-- HRM -->
 </testng-results>
