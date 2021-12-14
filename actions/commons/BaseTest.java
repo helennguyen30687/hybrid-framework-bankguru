@@ -42,6 +42,9 @@ public class BaseTest {
 		CHROME, FIREFOX, SAFARI, IE, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX;
 	}
 
+	private enum ENVIRONMENT {
+		DEV, TESTING, STAGING, PRODUCTION;
+	}
 //	private enum OS {
 //		WINDOWS, MAC_OSX, LINUX;
 //	}
@@ -94,44 +97,59 @@ public class BaseTest {
 			driver = new FirefoxDriver();
 		} else if (browser == BROWSER.CHROME) {
 			WebDriverManager.chromedriver().setup();
-			//WebDriverManager.chromiumdriver().driverVersion("").setup();
+			// WebDriverManager.chromiumdriver().driverVersion("").setup();
 			// WebDriverManager.chromedriver().driverVersion("abc").setup();
 			// download driver version match with browser version
 			System.setProperty("webdriver.chrome.args", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("useAutomationExtension", false);
-			options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
-			
+			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-notifications");
 			options.addArguments("--disable-geolocation");
-			
-			Map<String,Object> prefs = new HashMap<String,Object>();
+
+			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
-			options.setExperimentalOption("prefs",prefs);
-			
+			options.setExperimentalOption("prefs", prefs);
+
 			driver = new ChromeDriver(options);
 		} else if (browser == BROWSER.IE) {
-			//WebDriverManager.iedriver().arch32().setup();
+			// WebDriverManager.iedriver().arch32().setup();
 			WebDriverManager.iedriver().arch32().driverVersion("3.141.59").setup();
 			driver = new InternetExplorerDriver();
 
 		} else if (browser == BROWSER.EDGE_LEGACY) {
 			driver = new EdgeDriver();
 
-		}else if (browser == BROWSER.EDGE_CHROMIUM) {
+		} else if (browser == BROWSER.EDGE_CHROMIUM) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 
-		}else {
+		} else {
 			throw new RuntimeException("Please enter correct browser name!");
 		}
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(appUrl);
+		driver.get(getEnvironmentValue(appUrl));
 		return driver;
+	}
+
+	private String getEnvironmentValue(String environmentName) {
+		String envUrl = null;
+		ENVIRONMENT environment = ENVIRONMENT.valueOf(environmentName.toUpperCase());
+		if (environment == ENVIRONMENT.DEV) {
+			envUrl = "https://demo.guru99.com/v1";
+		} else if (environment == ENVIRONMENT.TESTING) {
+			envUrl = "https://demo.guru99.com/v2";
+		} else if (environment == ENVIRONMENT.STAGING) {
+			envUrl = "https://demo.guru99.com/v3";
+		} else if (environment == ENVIRONMENT.PRODUCTION) {
+			envUrl = "https://demo.guru99.com/v4";
+		}
+		return envUrl;
 	}
 
 	public WebDriver getWebDriver() {

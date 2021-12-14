@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Bank Guru" parallel="false">
-  <test name="Run on FIREFOX">
-    <classes>
-      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_1"/>
-      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_2"/>
-      <class name="com.bankguru.login.Level_02_Register_Login_Base_Page_3"/>
-    </classes>
-  </test> 
+	<parameter name="url" value="production" />
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.MethodListener" />
+		<listener class-name="reportConfig.ExtentTestListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+		<listener class-name="retryConfig.RetryListener" />
+	</listeners>
+	<test name="Run on Chrome">
+		<parameter name="browser" value="CHROME" />
+		<classes>
+			<class name="com.bankguru.payment.Level_21_Multiple_Environment" />
+		</classes>
+	</test>
 </suite>
