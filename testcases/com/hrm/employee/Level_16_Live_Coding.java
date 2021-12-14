@@ -3,6 +3,7 @@ package com.hrm.employee;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -13,9 +14,11 @@ import pageObjects.hrm.DashboardPageObject;
 import pageObjects.hrm.EmployeeListPageObject;
 import pageObjects.hrm.LoginPageObject;
 import pageObjects.hrm.PageGenerator;
+import retryConfig.RetryListener;
 import utilities.DataHelper;
 import pageObjects.hrm.MyInfoPageObject;
 
+@Listeners(RetryListener.class)
 public class Level_16_Live_Coding extends BaseTest {
 	WebDriver driver;
 	String adminUserName, adminPassword, empFirstName, empLastName, empFullName, empUserName, empPassword, statusValue, employeeID;

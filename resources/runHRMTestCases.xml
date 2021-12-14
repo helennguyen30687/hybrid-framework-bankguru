@@ -26,6 +26,7 @@
 		<listener class-name="reportConfig.MethodListener" />
 		<listener class-name="reportConfig.ExtentTestListener" />
 		<listener class-name="reportConfig.ReportNGListener" />
+		<listener class-name="retryConfig.RetryListener" /> 
 	</listeners>
 
 	<test name="Run on Firefox ">

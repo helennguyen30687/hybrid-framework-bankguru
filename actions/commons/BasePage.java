@@ -162,20 +162,35 @@ public class BasePage {
 	}
 
 	public void clickToElement(WebDriver driver, String locator) {
-		getElement(driver, locator).click();
+		highlightElement(driver, locator);
+		if (driver.toString().contains("internet explorer")) {
+			clickToElementByJS(driver, locator);
+			sleepInSecond(2);
+		} else {
+			getElement(driver, locator).click();
+		}
 	}
 
 	public void clickToElement(WebDriver driver, String locator, String... params) {
-		getElement(driver, getDynamicLocator(locator, params)).click();
+		highlightElement(driver, locator);
+		if (driver.toString().contains("internet explorer")) {
+			clickToElementByJS(driver, locator);
+			sleepInSecond(2);
+		} else {
+			getElement(driver, getDynamicLocator(locator, params)).click();
+		}
+
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locator, String value) {
+		highlightElement(driver, locator);
 		getElement(driver, locator).clear();
 		getElement(driver, locator).sendKeys(value);
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locator, String value, String... params) {
 		locator = getDynamicLocator(locator, params);
+		highlightElement(driver, locator);
 		getElement(driver, locator).clear();
 		getElement(driver, locator).sendKeys(value);
 	}
@@ -224,12 +239,14 @@ public class BasePage {
 		}
 	}
 
-	public void selectItemInCustomDropdown(WebDriver driver, String parentLocator, String childItemLocator, String expectedItem) {
+	public void selectItemInCustomDropdown(WebDriver driver, String parentLocator, String childItemLocator,
+			String expectedItem) {
 		getElement(driver, parentLocator).click();
 		sleepInSecond(1);
 
 		explicitWait = new WebDriverWait(driver, shortTimeout);
-		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childItemLocator)));
+		List<WebElement> allItems = explicitWait
+				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childItemLocator)));
 
 		for (WebElement item : allItems) {
 			if (item.getText().trim().equals(expectedItem)) {
@@ -261,32 +278,53 @@ public class BasePage {
 	}
 
 	public void checkToCheckboxOrRadio(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		if (!isElementSelected(driver, locator)) {
-			getElement(driver, locator).click();
+			if (driver.toString().contains("internet explorer")) {
+				clickToElementByJS(driver, locator);
+			} else {
+				getElement(driver, locator).click();
+			}
 		}
 	}
 
 	public void checkToCheckboxOrRadio(WebDriver driver, String locator, String... params) {
 		locator = getDynamicLocator(locator, params);
+		highlightElement(driver, locator);
 		if (!isElementSelected(driver, locator)) {
-			getElement(driver, locator).click();
+			if (driver.toString().contains("internet explorer")) {
+				clickToElementByJS(driver, locator);
+			} else {
+				getElement(driver, locator).click();
+			}
 		}
 	}
 
 	public void unCheckToCheckbox(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		if (isElementSelected(driver, locator)) {
-			getElement(driver, locator).click();
+			if (driver.toString().contains("internet explorer")) {
+				clickToElementByJS(driver, locator);
+			} else {
+				getElement(driver, locator).click();
+			}
 		}
 	}
 
 	public void unCheckToCheckbox(WebDriver driver, String locator, String... params) {
 		locator = getDynamicLocator(locator, params);
+		highlightElement(driver, locator);
 		if (isElementSelected(driver, locator)) {
-			getElement(driver, locator).click();
+			if (driver.toString().contains("internet explorer")) {
+				clickToElementByJS(driver, locator);
+			} else {
+				getElement(driver, locator).click();
+			}
 		}
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		try {
 			// 1.in UI + In DOM
 			// 2.Not in UI + In DOM
@@ -398,7 +436,8 @@ public class BasePage {
 
 	public boolean areExpectedTextInInnerText(WebDriver driver, String textExpected) {
 		jsExecutor = (JavascriptExecutor) driver;
-		String textActual = (String) jsExecutor.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
+		String textActual = (String) jsExecutor
+				.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
 		return textActual.equals(textExpected);
 	}
 
@@ -417,9 +456,10 @@ public class BasePage {
 		WebElement element = getElement(driver, locator);
 		String originalStyle = element.getAttribute("style");
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
-				"border: 2px solid red; border-style: dashed;");
-		sleepInSecond(1);
-		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
+				"border: 3px solid red; border-style: solid;");
+		//sleepInSecond(1);
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				originalStyle);
 	}
 
 	public void clickToElementByJS(WebDriver driver, String locator) {
@@ -439,7 +479,8 @@ public class BasePage {
 
 	public void removeAttributeInDOM(WebDriver driver, String locator, String attributeRemove) {
 		jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getElement(driver, locator));
+		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');",
+				getElement(driver, locator));
 	}
 
 	public boolean isJQueryAndAjaxLoadedSuccess(WebDriver driver) {
@@ -450,7 +491,8 @@ public class BasePage {
 
 			@Override
 			public Boolean apply(WebDriver driver) {
-				return (Boolean) ((JavascriptExecutor) driver).executeScript("return (window.jQuery != null) && (jQuery.active === 0);");
+				return (Boolean) ((JavascriptExecutor) driver)
+						.executeScript("return (window.jQuery != null) && (jQuery.active === 0);");
 			}
 		};
 		return explicitWait.until(jQueryLoad);
@@ -538,7 +580,8 @@ public class BasePage {
 
 	public void waitForElementInvisible(WebDriver driver, String locator, String... params) {
 		explicitWait = new WebDriverWait(driver, shortTimeout);
-		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(getDynamicLocator(locator, params))));
+		explicitWait
+				.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(getDynamicLocator(locator, params))));
 	}
 
 	// User - Nopcommerce
@@ -647,7 +690,8 @@ public class BasePage {
 	}
 
 	// Child-Submenu
-	public void openChildSubMenuPageHRM(WebDriver driver, String menuPageName, String subMenuPageName, String childSubMenuPageName) {
+	public void openChildSubMenuPageHRM(WebDriver driver, String menuPageName, String subMenuPageName,
+			String childSubMenuPageName) {
 		waitForElementClickable(driver, BasePageUI.MENU_BY_PAGE_NAME, menuPageName);
 		clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, menuPageName);
 
@@ -738,11 +782,14 @@ public class BasePage {
 		return isElementSelected(driver, BasePageUI.RADIO_BY_LABEL, radioLabelName);
 	}
 
-	public String getValueInTableAtRowIndexAndColumnName(WebDriver driver, String tableID, String headerName, String rowIndex) {
+	public String getValueInTableAtRowIndexAndColumnName(WebDriver driver, String tableID, String headerName,
+			String rowIndex) {
 		sleepInSecond(3);
 		int columnIndex = getElementSize(driver, BasePageUI.TABLE_HEADER_BY_ID_AND_NAME, tableID, headerName) + 1;
-		waitForAllElementVisible(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex, String.valueOf(columnIndex));
-		return getElementText(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex, String.valueOf(columnIndex));
+		waitForAllElementVisible(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex,
+				String.valueOf(columnIndex));
+		return getElementText(driver, BasePageUI.TABLE_ROW_BY_COLUMN_INDEX_AND_ROW_INDEX, tableID, rowIndex,
+				String.valueOf(columnIndex));
 	}
 
 	public LoginPageObject logoutToSystem(WebDriver driver) {
@@ -776,7 +823,6 @@ public class BasePage {
 		waitForElementVisible(driver, BasePageUI.ANY_FIELD, fieldID);
 		return isElementEnabled(driver, BasePageUI.ANY_FIELD, fieldID);
 	}
-
 
 	private Alert alert;
 	private Select select;
