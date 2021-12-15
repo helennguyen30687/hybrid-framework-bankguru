@@ -60,8 +60,10 @@ public class BaseTest {
 			driver = new FirefoxDriver();
 		} else if (browser == BROWSER.CHROME) {
 			WebDriverManager.chromedriver().setup();
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(new File(GlobalConstants.PROJECT_PATH
+					+ "\\browserExtension\\UltraSurf-VPN.crx"));
+			driver = new ChromeDriver(options);
 		} else if (browser == BROWSER.EDGE_CHROMIUM) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
@@ -97,12 +99,15 @@ public class BaseTest {
 			driver = new FirefoxDriver();
 		} else if (browser == BROWSER.CHROME) {
 			WebDriverManager.chromedriver().setup();
+			
 			// WebDriverManager.chromiumdriver().driverVersion("").setup();
 			// WebDriverManager.chromedriver().driverVersion("abc").setup();
 			// download driver version match with browser version
 			System.setProperty("webdriver.chrome.args", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(new File(GlobalConstants.PROJECT_PATH
+					+ "\\browserExtension\\UltraSurf-VPN.crx"));
 			options.setExperimentalOption("useAutomationExtension", false);
 			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 
@@ -133,7 +138,7 @@ public class BaseTest {
 		}
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(getEnvironmentValue(appUrl));
+		driver.get(appUrl);
 		return driver;
 	}
 
